@@ -7,3 +7,31 @@
     text-wrap: balance;
   }
 }
+
+.content {
+  position: relative;
+  z-index: 0;
+  top: -120px;
+}
+
+.h-120px {
+  height: 120px;
+}
+
+.gradient-start {
+  background: rgb(224, 233, 252);
+  background: -moz-linear-gradient(45deg, rgba(224, 233, 252, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(224, 233, 252, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(45deg, rgba(224, 233, 252, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0e9fc", endColorstr="#ffffff", GradientType=1);
+}
+
+@media (max-width: 767.98px) {
+  .content {
+    top: -84px;
+  }
+
+  .h-120px {
+    height: 84px
+  }
+}
