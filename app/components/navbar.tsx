@@ -100,21 +100,27 @@ const Navbar = () => {
           </button>
 
           <div className="links hidden md:block text-sm">
-            <ul className="flex gap-4 text-gray-700 uppercase font-semibold">
+            <ul className="flex gap-4">
               <Link href="">
                 {/* // APPLY {"border-b-4 border-sky-600"} CLASSES TO ACTIVE ROUTE */}
-                <li className="px-3 py-3 h-120px content-center border-b-4 border-sky-600">
+                <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700 border-b-4 border-sky-600">
                   Home
                 </li>
               </Link>
               <Link href="">
-                <li className="px-3 py-3 h-120px content-center">Treatment</li>
+                <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                  Treatment
+                </li>
               </Link>
               <Link href="">
-                <li className="px-3 py-3 h-120px content-center">About Us</li>
+                <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                  About Us
+                </li>
               </Link>
               <Link href="">
-                <li className="px-3 py-3 h-120px content-center">Blogs</li>
+                <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                  Blogs
+                </li>
               </Link>
             </ul>
           </div>
@@ -126,18 +132,27 @@ const Navbar = () => {
           isMobileMenuOpen ? "flex md:hidden" : "hidden"
         }`}
       >
-        <ul className="w-full text-gray-500 font-semibold block gap-2">
+        <ul className="w-full text-gray-800 block gap-2">
           <Link href="">
-            <li className="p-3 border-b">Home</li>
+            {/* // APPLY {"text-sky-700"} CLASS TO ACTIVE ROUTE */}
+            <li className="p-3 border-b font-semibold hover:text-sky-600 text-sky-700">
+              Home
+            </li>
           </Link>
           <Link href="">
-            <li className="p-3 border-b">Treatment</li>
+            <li className="p-3 border-b font-semibold hover:text-sky-600">
+              Treatment
+            </li>
           </Link>
           <Link href="">
-            <li className="p-3 border-b">About Us</li>
+            <li className="p-3 border-b font-semibold hover:text-sky-600">
+              About Us
+            </li>
           </Link>
           <Link href="">
-            <li className="p-3 border-b">Blogs</li>
+            <li className="p-3 border-b font-semibold hover:text-sky-700">
+              Blogs
+            </li>
           </Link>
         </ul>
       </div>

@@ -3,6 +3,7 @@
 import { Readex_Pro } from "next/font/google";
 import Image from "next/image";
 import Navbar from "./components/navbar";
+import Banner from "./components/banner";
 
 const readex_pro = Readex_Pro({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function Home() {
 
       <Navbar />
       <section className="content">
+        <Banner />
         <Image
           src="/banner.jpeg"
           alt="banner"
