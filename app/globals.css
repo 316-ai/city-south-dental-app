@@ -107,6 +107,15 @@
   text-shadow: 2px 2px 20px #00000080;
 }
 
+.text-shadow-sm {
+  text-shadow: 2px 2px 10px #00000040;
+}
+
+.about {
+  background-image: url('/banner.jpeg');
+  background-size: cover;
+}
+
 @media (max-width: 767.98px) {
   .content {
     top: -84px;

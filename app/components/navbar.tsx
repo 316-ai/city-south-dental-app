@@ -69,13 +69,13 @@ const Navbar = () => {
               <span>Mon to Sat 09:00 - 21:00</span>
             </div>
             <div className="flex gap-2">
-              <a href="www.facebook.com" target="_blank">
+              <a href="https://www.facebook.com" target="_blank">
                 <FeatherIcon icon="facebook" className="pl-2" />
               </a>
-              <a href="www.linkedin.com" target="_blank">
+              <a href="https://www.linkedin.com" target="_blank">
                 <FeatherIcon icon="linkedin" className="pl-2" />
               </a>
-              <a href="www.instagram.com" target="_blank">
+              <a href="https://www.instagram.com" target="_blank">
                 <FeatherIcon icon="instagram" className="pl-2" />
               </a>
             </div>
@@ -106,28 +106,28 @@ const Navbar = () => {
 
           <div className="links hidden md:block text-sm">
             <ul className="flex gap-4">
-              <Link href="">
+              <Link href="/">
                 {/* // APPLY {"border-b-4 border-sky-600"} CLASSES TO ACTIVE ROUTE */}
                 <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700 border-b-4 border-sky-600">
                   Home
                 </li>
               </Link>
-              <Link href="">
+              <Link href="treatment">
                 <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
                   Treatment
                 </li>
               </Link>
-              <Link href="">
+              <Link href="about">
                 <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
                   About Us
                 </li>
               </Link>
-              <Link href="">
+              <Link href="blogs">
                 <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
                   Blogs
                 </li>
               </Link>
-              <Link href="">
+              <Link href="contact">
                 <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
                   Contact
                 </li>
@@ -143,28 +143,28 @@ const Navbar = () => {
         }`}
       >
         <ul className="w-full text-gray-800 block gap-2">
-          <Link href="">
+          <Link href="/">
             {/* // APPLY {"text-sky-700"} CLASS TO ACTIVE ROUTE */}
             <li className="p-3 border-b font-semibold hover:text-sky-600 text-sky-700">
               Home
             </li>
           </Link>
-          <Link href="">
+          <Link href="treatment">
             <li className="p-3 border-b font-semibold hover:text-sky-600">
               Treatment
             </li>
           </Link>
-          <Link href="">
+          <Link href="about">
             <li className="p-3 border-b font-semibold hover:text-sky-600">
               About Us
             </li>
           </Link>
-          <Link href="">
+          <Link href="blogs">
             <li className="p-3 border-b font-semibold hover:text-sky-700">
               Blogs
             </li>
           </Link>
-          <Link href="">
+          <Link href="contact">
             <li className="p-3 border-b font-semibold hover:text-sky-700">
               Contact
             </li>

@@ -13,13 +13,6 @@ export default function Home() {
         <Banner />
         <Search />
         <Story />
-        {/* <Image
-          src="/banner.jpeg"
-          alt="banner"
-          className="w-full"
-          width={1500}
-          height={1000}
-        /> */}
       </section>
       <Footer />
     </>

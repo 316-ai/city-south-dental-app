@@ -43,7 +43,7 @@ const Story = () => {
               <h2 className="text-2xl text-sky-900 font-semibold mb-3">
                 Building Healthy Smiles And Happy Lives
               </h2>
-              <p className="text-sm text-gray-600 font-light mb-5">
+              <p className="text-sm text-gray-600 font-thin mb-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur voluptatem fugit impedit eveniet! Atque, quas
                 voluptates quae culpa laboriosam pariatur quos fuga, deserunt,
@@ -71,23 +71,23 @@ const Story = () => {
               <h2 className="text-2xl text-white font-semibold mb-5">
                 Building Healthy Smiles And Happy Lives
               </h2>
-              <p className="text-sm text-gray-300 font-light mb-6">
+              <p className="text-sm text-gray-300 font-thin pr-3 mb-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur voluptatem fugit impedit eveniet! Atque, quas
                 voluptates quae culpa laboriosam pariatur quos fuga, deserunt,
                 ipsum laborum rem officiis vitae eos. Error
               </p>
               <div className="grid lg:grid-cols-2">
-                <li className="text-white text-sm mb-1 lg:mb-2 list-decimal">
+                <li className="text-gray-300 text-sm font-normal mb-1 lg:mb-2 list-decimal">
                   Lorem ipsum dolor sit amet consectetur.
                 </li>
-                <li className="text-white text-sm mb-1 lg:mb-2 list-decimal">
+                <li className="text-gray-300 text-sm font-normal mb-1 lg:mb-2 list-decimal">
                   Lorem ipsum dolor sit amet consectetur.
                 </li>
-                <li className="text-white text-sm mb-1 lg:mb-2 list-decimal">
+                <li className="text-gray-300 text-sm font-normal mb-1 lg:mb-2 list-decimal">
                   Lorem ipsum dolor sit amet consectetur.
                 </li>
-                <li className="text-white text-sm mb-1 lg:mb-2 list-decimal">
+                <li className="text-gray-300 text-sm font-normal mb-1 lg:mb-2 list-decimal">
                   Lorem ipsum dolor sit amet consectetur.
                 </li>
               </div>
