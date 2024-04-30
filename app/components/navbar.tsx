@@ -127,6 +127,11 @@ const Navbar = () => {
                   Blogs
                 </li>
               </Link>
+              <Link href="">
+                <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                  Contact
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -157,6 +162,11 @@ const Navbar = () => {
           <Link href="">
             <li className="p-3 border-b font-semibold hover:text-sky-700">
               Blogs
+            </li>
+          </Link>
+          <Link href="">
+            <li className="p-3 border-b font-semibold hover:text-sky-700">
+              Contact
             </li>
           </Link>
         </ul>

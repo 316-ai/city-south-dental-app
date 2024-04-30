@@ -8,14 +8,14 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className="footer px-3 pt-12 pb-6 gradient-start">
+      <div className="footer px-3 pt-14 pb-8 gradient-start">
         <div className="lg:container mx-auto">
           <div className="grid grid-cols-8 gap-4 md:gap-12 lg:gap-6">
-            <div className="col-span-8 md:col-span-7 lg:col-span-3">
+            <div className="col-span-8 md:col-span-7 lg:col-span-3 flex flex-col justify-between">
               <Image
                 src="/logo.png"
                 alt="logo"
-                className="w-28 mb-4"
+                className="w-28 mb-3"
                 width={130}
                 height={10}
               />
@@ -25,41 +25,41 @@ const Footer = () => {
                 reprehenderit amet consectetur adipi m dol Lorem, ipsum
               </p>
             </div>
-            <div className="col-span-8 md:col-span-2 lg:col-span-1">
-              <h2 className="mb-6">Useful Links</h2>
+            <div className="col-span-8 md:col-span-2 lg:col-span-1 flex flex-col justify-between">
+              <h2 className="text-blue-950 mb-1 md:mb-3">Useful Links</h2>
               <ul>
                 <Link href="">
-                  <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-2">
+                  <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-1 md:mb-3">
                     Home
                   </li>
                 </Link>
                 <Link href="">
-                  <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-2">
+                  <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-1 md:mb-3">
                     Treatment
                   </li>
                 </Link>
                 <Link href="">
-                  <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-2">
+                  <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-1 md:mb-3">
                     About
                   </li>
                 </Link>
                 <Link href="">
-                  <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-2">
+                  <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-1 md:mb-3">
                     Blogs
                   </li>
                 </Link>
                 <Link href="">
-                  <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-2">
+                  <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150">
                     Contact
                   </li>
                 </Link>
               </ul>
             </div>
-            <div className="col-span-8 md:col-span-3 lg:col-span-2">
-              <div className="flex mb-4">
+            <div className="col-span-8 md:col-span-3 lg:col-span-2 flex flex-col justify-between">
+              <div className="flex mb-2">
                 <FeatherIcon icon="map-pin" className="pr-2" />
                 <div>
-                  <h2>Location</h2>
+                  <h2 className="text-blue-950">Location</h2>
                   <a
                     className="text-sm text-gray-600 hover:text-blue-600"
                     href="https://maps.app.goo.gl/Kmdk9fafCNWfunnC9"
@@ -69,10 +69,10 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex mb-4">
+              <div className="flex mb-2">
                 <FeatherIcon icon="phone" className="pr-2" />
                 <div>
-                  <h2>Phone</h2>
+                  <h2 className="text-blue-950">Phone</h2>
                   <a
                     className="text-sm text-gray-600 hover:text-blue-600"
                     href="tel:9054591742"
@@ -82,10 +82,10 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex mb-4">
+              <div className="flex">
                 <FeatherIcon icon="mail" className="pr-2" />
                 <div>
-                  <h2>Email</h2>
+                  <h2 className="text-blue-950">Email</h2>
                   <a
                     className="text-sm text-gray-600 hover:text-blue-600"
                     href="mailto:dentist@citysouthdental.com"
@@ -97,10 +97,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-span-8 md:col-span-3 lg:col-span-2 flex flex-col justify-between">
-              <div className="flex mb-10">
+              <div className="flex mb-4">
                 <FeatherIcon icon="clock" className="pr-2" />
                 <div>
-                  <h2 className="mb-1">Working Hours</h2>
+                  <h2 className="mb-1 text-blue-950">Working Hours</h2>
                   <p className="text-sm text-gray-600">
                     Mon to Sat 09:00 - 21:00
                   </p>
@@ -110,7 +110,7 @@ const Footer = () => {
                 <a
                   href="www.facebook.com"
                   target="_blank"
-                  className="rounded-2xl text-sky-600 hover:text-sky-800 bg-blue-100 hover:bg-blue-200 ease-in duration-150 p-2"
+                  className="rounded-2xl shadow text-gray-500 hover:text-sky-800 bg-white hover:bg-sky-100 ease-in duration-150 p-2"
                 >
                   <FeatherIcon icon="facebook" className="p-1" />
                 </a>
@@ -118,14 +118,14 @@ const Footer = () => {
                 <a
                   href="www.linkedin.com"
                   target="_blank"
-                  className="rounded-2xl text-sky-600 hover:text-sky-800 bg-blue-100 hover:bg-blue-200 ease-in duration-150 p-2"
+                  className="rounded-2xl shadow text-gray-500 hover:text-sky-800 bg-white hover:bg-sky-100 ease-in duration-150 p-2"
                 >
                   <FeatherIcon icon="linkedin" className="p-1" />
                 </a>
                 <a
                   href="www.instagram.com"
                   target="_blank"
-                  className="rounded-2xl text-sky-600 hover:text-sky-800 bg-blue-100 hover:bg-blue-200 ease-in duration-150 p-2"
+                  className="rounded-2xl shadow text-gray-500 hover:text-sky-800 bg-white hover:bg-sky-100 ease-in duration-150 p-2"
                 >
                   <FeatherIcon icon="instagram" className="p-1" />
                 </a>
