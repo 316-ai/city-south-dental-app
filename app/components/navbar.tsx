@@ -49,11 +49,16 @@ const Navbar = () => {
             <a
               className="flex items-center text-sm"
               href="https://maps.app.goo.gl/Kmdk9fafCNWfunnC9"
+              target="_blank"
             >
               <FeatherIcon icon="map-pin" className="pr-2" />
               <span>7700 Hurontario St 308, Brampton</span>
             </a>
-            <a className="flex items-center text-sm" href="tel:9054591742">
+            <a
+              className="flex items-center text-sm"
+              href="tel:9054591742"
+              target="_blank"
+            >
               <FeatherIcon icon="phone" className="pr-2" />
               <span>+(905) 459-1742</span>
             </a>
@@ -64,13 +69,13 @@ const Navbar = () => {
               <span>Mon to Sat 09:00 - 21:00</span>
             </div>
             <div className="flex gap-2">
-              <a href="www.facebook.com">
+              <a href="www.facebook.com" target="_blank">
                 <FeatherIcon icon="facebook" className="pl-2" />
               </a>
-              <a href="www.linkedin.com">
+              <a href="www.linkedin.com" target="_blank">
                 <FeatherIcon icon="linkedin" className="pl-2" />
               </a>
-              <a href="www.instagram.com">
+              <a href="www.instagram.com" target="_blank">
                 <FeatherIcon icon="instagram" className="pl-2" />
               </a>
             </div>

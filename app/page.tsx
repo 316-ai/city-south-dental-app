@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import Banner from "./components/banner";
 import Search from "./components/search";
 import Story from "./components/story";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           height={1000}
         /> */}
       </section>
+      <Footer />
     </>
   );
 }

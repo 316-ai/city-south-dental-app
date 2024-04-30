@@ -91,6 +91,10 @@
   height: calc(100svh - 40px);
 }
 
+.footer {
+  margin-top: -120px;
+}
+
 .gradient-start {
   background: rgb(224, 233, 252);
   background: -moz-linear-gradient(45deg, rgba(224, 233, 252, 1) 0%, rgba(255, 255, 255, 1) 100%);
@@ -114,5 +118,9 @@
 
   .slider-height {
     height: calc(100svh - 88px);
+  }
+
+  .footer {
+    margin-top: -84px;
   }
 }
