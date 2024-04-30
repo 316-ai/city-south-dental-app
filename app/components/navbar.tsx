@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="bg-blue-900 text-white px-3 py-2">
+      <header className="bg-blue-950 text-white px-3 py-2">
         <div className="lg:container mx-auto md:flex justify-between">
           <div className="md:flex gap-8">
             <a

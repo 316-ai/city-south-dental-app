@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/navbar";
 import Banner from "./components/banner";
 import Search from "./components/search";
+import Story from "./components/story";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <section className="content">
         <Banner />
         <Search />
+        <Story />
         {/* <Image
           src="/banner.jpeg"
           alt="banner"
