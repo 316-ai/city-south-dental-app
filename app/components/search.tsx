@@ -5,6 +5,7 @@ import Link from "next/link";
 import FeatherIcon from "feather-icons-react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import {
   Select,
   SelectContent,
@@ -25,6 +26,11 @@ import {
 
 const Search = () => {
   const [date, setDate] = React.useState<Date>();
+  const router = useRouter();
+
+  const appointments = () => {
+    router.push("/appointments");
+  };
 
   return (
     <div className="px-3 py-2 z-20">
@@ -80,7 +86,11 @@ const Search = () => {
               </SelectContent>
             </Select>
 
-            <Button className="w-full md:col-span-2" variant={"new"}>
+            <Button
+              onClick={appointments}
+              className="w-full md:col-span-2"
+              variant={"new"}
+            >
               Book Now
             </Button>
           </div>
