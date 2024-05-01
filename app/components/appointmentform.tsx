@@ -17,14 +17,14 @@ import { Button } from "@/components/ui/button";
 const Appointmentform = () => {
   return (
     <>
-      <div className="px-3 py-2 mb-7 lg:mt-12">
+      <div className="px-3 py-7 ld:py-12 bg-gray-50">
         <div className="lg:container mx-auto">
           <div className="grid grid-cols-8 gap-6">
             <div className="col-span-8 lg:col-span-6">
               <h1 className="font-semibold text-blue-900 text-2xl mb-4">
                 Appointment Form
               </h1>
-              <div className="border rounded-3xl px-4 py-5">
+              <div className="bg-white shadow-md rounded-3xl px-4 py-5">
                 <h2 className="text-lg font-semibold text-blue-900 mb-3">
                   Patient Details
                 </h2>
@@ -71,7 +71,7 @@ const Appointmentform = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-8 md:col-span-3 xl:col-span-2 border rounded-3xl px-4 py-5">
+            <div className="col-span-8 md:col-span-3 xl:col-span-2 bg-white shadow-md rounded-3xl px-4 py-5">
               <h2 className="text-lg font-semibold text-blue-900 mb-3">
                 Opening Hours
               </h2>

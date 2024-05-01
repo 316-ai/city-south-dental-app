@@ -4,6 +4,7 @@ import Banner from "./components/banner";
 import Search from "./components/search";
 import Story from "./components/story";
 import Footer from "./components/footer";
+import Topchoice from "./components/topchoice";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Banner />
         <Search />
         <Story />
+        <Topchoice />
       </section>
       <Footer />
     </>

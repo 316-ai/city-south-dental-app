@@ -8,7 +8,7 @@ import Image from "next/image";
 const Story = () => {
   return (
     <>
-      <div className="px-3 py-2 lg:mt-12">
+      <div className="px-3 py-2 pt-7 lg:pt-12">
         <div className="lg:container mx-auto">
           <div className="grid grid-cols-8 gap-12 md:gap-8">
             <div className="col-span-8 lg:col-span-1 flex lg:flex-col justify-between flex-wrap gap-8">
