@@ -5,7 +5,13 @@ import FeatherIcon from "feather-icons-react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/bundle";
@@ -14,12 +20,13 @@ const Banner = () => {
   return (
     <div className="relative">
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Autoplay, Scrollbar, A11y]}
         navigation
         pagination={{ type: "bullets", clickable: true }}
         slidesPerView={1}
         scrollbar={{ draggable: true }}
-        loop
+        autoplay={true}
+        loop={true}
         className="w-full"
       >
         <SwiperSlide>
