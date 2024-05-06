@@ -105,7 +105,7 @@ const Navbar = () => {
           </button>
 
           <div className="links hidden md:block text-sm">
-            <ul className="flex gap-4">
+            <ul className="flex justify-center items-center gap-4">
               <Link href="/">
                 {/* // APPLY {"border-b-4 border-sky-600"} CLASSES TO ACTIVE ROUTE */}
                 <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700 border-b-4 border-sky-600">
