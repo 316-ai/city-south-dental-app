@@ -62,7 +62,7 @@ const Faq = () => {
         <div className="max-w-3xl mx-auto">
           <div className="mb-5">
             <h6 className="text-sm text-sky-600 mb-3 text-center">
-              Questions on your mind? We've got the answers you need.
+              Questions on your mind? We have got the answers you need.
             </h6>
             <h2 className="text-2xl text-sky-900 font-semibold text-center">
               F.A.Q
