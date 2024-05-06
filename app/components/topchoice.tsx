@@ -14,7 +14,7 @@ const Topchoice = () => {
             <div>
               <h6 className="text-sm text-sky-600 mb-3">Sub Header</h6>
               <h2 className="text-2xl text-sky-900 font-semibold">
-                Why We're Your Top Dental Choice for Unrivaled Excellence
+                Why We are Your Top Dental Choice for Unrivaled Excellence
               </h2>
             </div>
             <div className="hidden sm:block">

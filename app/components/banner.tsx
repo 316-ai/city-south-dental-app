@@ -117,7 +117,7 @@ const Banner = () => {
           />
         </div>
         <h2 className="text-center text-sm text-white text-shadow mt-2">
-          Doctor's No.1 Choice
+          Doctors No.1 Choice
         </h2>
       </div>
     </div>
