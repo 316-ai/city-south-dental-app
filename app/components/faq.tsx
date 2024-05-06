@@ -60,7 +60,7 @@ const Faq = () => {
     <>
       <section className="px-3 py-7 lg:py-12 bg-gray-50">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-5">
+          <div className="mb-5 ">
             <h6 className="text-sm text-sky-600 mb-3 text-center">
               Questions on your mind? We have got the answers you need.
             </h6>
