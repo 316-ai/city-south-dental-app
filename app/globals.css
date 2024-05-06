@@ -119,6 +119,10 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#e0e9fc", GradientType=1);
 }
 
+.gradient-5050 {
+  background: linear-gradient(to bottom, white 40%, #172554 40%);
+}
+
 .text-shadow {
   text-shadow: 2px 2px 20px #00000080;
 }

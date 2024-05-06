@@ -5,6 +5,7 @@ import Search from "./components/search";
 import Story from "./components/story";
 import Footer from "./components/footer";
 import Topchoice from "./components/topchoice";
+import Witness from "./components/witness";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Search />
         <Story />
         <Topchoice />
+        <Witness />
       </section>
       <Footer />
     </>
