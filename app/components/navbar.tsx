@@ -105,31 +105,31 @@ const Navbar = () => {
           </button>
 
           <div className="links hidden md:block text-sm">
-            <ul className="flex justify-center items-center gap-4">
+            <ul className="flex gap-4">
               <Link href="/">
                 {/* // APPLY {"border-b-4 border-sky-600"} CLASSES TO ACTIVE ROUTE */}
-                <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700 border-b-4 border-sky-600">
-                  Home
+                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700 border-b-4 border-sky-600">
+                  <h2>Home</h2>
                 </li>
               </Link>
               <Link href="treatment">
-                <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
-                  Treatment
+                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                  <div>Treatment</div>
                 </li>
               </Link>
               <Link href="about">
-                <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
-                  About Us
+                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                  <h2>About Us</h2>
                 </li>
               </Link>
               <Link href="blogs">
-                <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
-                  Blogs
+                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                  <h2>Blogs</h2>
                 </li>
               </Link>
               <Link href="contact">
-                <li className="ease-in duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
-                  Contact
+                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                  <h2>Contact</h2>
                 </li>
               </Link>
             </ul>
