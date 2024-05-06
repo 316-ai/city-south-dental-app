@@ -61,7 +61,7 @@ const Witness = () => {
           </div>
 
           <div
-            className="relative w-full max-w-[800px] aspect-[70/50] m-auto overflow-hidden select-none rounded-3xl shadow"
+            className="relative w-full max-w-[740px] aspect-[70/50] m-auto overflow-hidden select-none rounded-3xl shadow"
             onMouseMove={handleMove}
             onMouseDown={handleStart}
             onTouchMove={handleMove}
@@ -72,7 +72,7 @@ const Witness = () => {
             <Image alt="" fill draggable={false} priority src="/after.png" />
 
             <div
-              className="absolute top-0 left-0 right-0 w-full max-w-[800px] aspect-[70/50] m-auto overflow-hidden select-none"
+              className="absolute top-0 left-0 right-0 w-full max-w-[740px] aspect-[70/50] m-auto overflow-hidden select-none"
               style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
               <Image fill priority draggable={false} alt="" src="/before.png" />
