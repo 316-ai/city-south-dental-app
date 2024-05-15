@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import Story from "../components/story";
 import Footer from "../components/footer";
 import Pagebanner from "../components/pagebanner";
+import Topchoice from "../components/topchoice";
 
 export default function About() {
   return (
@@ -11,6 +12,7 @@ export default function About() {
       <section className="content">
         <Pagebanner name="About Us" />
         <Story />
+        <Topchoice />
         {/* <Image
           src="/banner.jpeg"
           alt="banner"
