@@ -112,22 +112,22 @@ const Navbar = () => {
                   <h2>Home</h2>
                 </li>
               </Link>
-              <Link href="treatment">
+              <Link href="/treatment">
                 <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
                   <div>Treatment</div>
                 </li>
               </Link>
-              <Link href="about">
+              <Link href="/about">
                 <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
                   <h2>About Us</h2>
                 </li>
               </Link>
-              <Link href="blogs">
+              <Link href="/blogs">
                 <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
                   <h2>Blogs</h2>
                 </li>
               </Link>
-              <Link href="contact">
+              <Link href="/contact">
                 <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
                   <h2>Contact</h2>
                 </li>
@@ -149,22 +149,22 @@ const Navbar = () => {
               Home
             </li>
           </Link>
-          <Link href="treatment">
+          <Link href="/treatment">
             <li className="p-3 border-b font-semibold hover:text-sky-600">
               Treatment
             </li>
           </Link>
-          <Link href="about">
+          <Link href="/about">
             <li className="p-3 border-b font-semibold hover:text-sky-600">
               About Us
             </li>
           </Link>
-          <Link href="blogs">
+          <Link href="/blogs">
             <li className="p-3 border-b font-semibold hover:text-sky-700">
               Blogs
             </li>
           </Link>
-          <Link href="contact">
+          <Link href="/contact">
             <li className="p-3 border-b font-semibold hover:text-sky-700">
               Contact
             </li>
