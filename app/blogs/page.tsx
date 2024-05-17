@@ -13,7 +13,7 @@ export default function Blogs() {
 
         <div className="px-3 py-7 lg:py-12 bg-gray-50">
           <div className="lg:container mx-auto">
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-8">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-x-5 md:gap-y-6">
               <Blogcard />
               <Blogcard />
               <Blogcard />

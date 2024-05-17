@@ -36,22 +36,22 @@ const Footer = () => {
                     Home
                   </li>
                 </Link>
-                <Link href="treatment">
+                <Link href="/treatment">
                   <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-1 md:mb-2">
                     Treatment
                   </li>
                 </Link>
-                <Link href="about">
+                <Link href="/about">
                   <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-1 md:mb-2">
                     About
                   </li>
                 </Link>
-                <Link href="blogs">
+                <Link href="/blogs">
                   <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150 mb-1 md:mb-2">
                     Blogs
                   </li>
                 </Link>
-                <Link href="contact">
+                <Link href="/contact">
                   <li className="text-sm text-gray-600 hover:text-blue-600 ease-in duration-150">
                     Contact
                   </li>

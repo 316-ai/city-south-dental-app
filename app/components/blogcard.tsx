@@ -17,8 +17,8 @@ const Blogcard = () => {
           className="w-full h-60 object-cover"
         />
 
-        <div className="py-3 px-4">
-          <span className="border px-3 py-1 rounded text-sm text-gray-400">
+        <div className="p-2 sm:p-4">
+          <span className="border px-3 py-1 rounded-lg text-sm text-gray-400">
             12 August, 2023
           </span>
 
@@ -33,15 +33,17 @@ const Blogcard = () => {
             tempora velit nobis.
           </h6>
 
-          <Link
-            href="/"
-            className="text-sm flex items-center uppercase text-sky-600 hover:underline mt-3"
-          >
-            <span>Read more</span>
-            <span>
-              <FeatherIcon icon="arrow-right" className="size-4 ml-2" />
-            </span>
-          </Link>
+          <div className="flex">
+            <Link
+              href="/blogs/123"
+              className="text-sm flex items-center uppercase text-sky-600 hover:underline mt-3"
+            >
+              <span>Read more</span>
+              <span>
+                <FeatherIcon icon="arrow-right" className="size-4 ml-2" />
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </>
