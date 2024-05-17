@@ -33,12 +33,12 @@ export default function Blogsdetail() {
               <Image
                 src="/happy-customer.jpeg"
                 alt="dots"
-                width={360}
+                width={1000}
                 height={0}
-                className="w-86 rounded shadow mb-4"
+                className="w-full h-[400px] object-cover rounded-3xl shadow mb-5"
               />
 
-              <p className="text-sm font-light text-gray-700 mb-4">
+              <p className="text font-light text-gray-700 mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Similique vero recusandae non, fuga deserunt suscipit distinctio
                 magnam cum libero sint, quasi architecto quas maiores minus
@@ -54,7 +54,7 @@ export default function Blogsdetail() {
                 aperiam?
               </p>
 
-              <ul className="list-inside list-decimal text-sm mb-4">
+              <ul className="list-inside list-decimal text mb-4">
                 <li>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
                   debitis sunt similique quae assumenda tempore odio sapiente
@@ -71,7 +71,7 @@ export default function Blogsdetail() {
                 </li>
               </ul>
 
-              <p className="text-sm font-light text-gray-700 mb-4">
+              <p className="text font-light text-gray-700 mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Similique vero recusandae non, fuga deserunt suscipit distinctio
                 magnam cum libero sint, quasi architecto quas maiores minus
