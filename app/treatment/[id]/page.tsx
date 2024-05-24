@@ -9,10 +9,7 @@ export default function Blogsdetail() {
     <>
       <Navbar />
       <section className="content">
-        <Pagebanner
-          name=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum
-            amet perferendis commodi. Voluptate, quos."
-        />
+        <Pagebanner name=" Service Name" />
 
         <section className="blogs px-3 py-7 lg:py-12 bg-white">
           <div className="lg:container mx-auto">
@@ -25,10 +22,7 @@ export default function Blogsdetail() {
                 className="w-full h-[360px] object-cover rounded-3xl shadow mb-6"
               /> */}
 
-              <span className="border px-3 py-1 rounded-lg text-sm text-gray-400">
-                12 August, 2023
-              </span>
-              <h6 className="text-sm text-sky-600 mt-4">mini caption</h6>
+              <h6 className="text-sm text-sky-600">mini caption</h6>
               <h1 className="text-2xl text-sky-900 font-semibold mt-2 mb-4">
                 Building Healthy Smiles And Happy Lives
               </h1>
@@ -91,19 +85,6 @@ export default function Blogsdetail() {
                   />
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="blogs px-3 py-7 lg:py-12 bg-gray-50">
-          <div className="lg:container mx-auto">
-            <div>
-              <h1 className="text-xl font-semibold text-gray-700 mb-4">
-                Similar Blogs
-              </h1>
-            </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-x-5 md:gap-y-6">
-              <Blogcard />
             </div>
           </div>
         </section>

@@ -27,7 +27,7 @@ const Servicebox = ({ image, caption, description }: ServiceboxProps) => {
           {description}
         </p>
         <Link
-          href="/blogs/123"
+          href="/treatment/123"
           className="text-sm flex items-center uppercase text-sky-600 hover:underline mt-3"
         >
           <span>Read more</span>
