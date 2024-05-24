@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import Topchoice from "./components/topchoice";
 import Witness from "./components/witness";
 import Faq from "./components/faq";
+import Servicecarousal from "./components/servicescarousal";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Banner />
         <Search />
         <Story />
+        <Servicecarousal />
         <Topchoice />
         <Witness />
         <Faq />
