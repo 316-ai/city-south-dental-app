@@ -83,7 +83,7 @@ const Navbar = () => {
         </div>
       </header>
 
-      <nav className="nav sticky top-0 w-full backdrop-blur-sm backdrop-opacity-90 z-50 bg-white bg-opacity-75">
+      <nav className="nav sticky top-0 w-full backdrop-blur-sm backdrop-opacity-90 z-50 bg-white bg-opacity-75 shadow">
         <div className="lg:container mx-auto flex justify-between items-center">
           <div className="logo px-3 py-3">
             <Link href="/">
