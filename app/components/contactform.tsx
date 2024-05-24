@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import FeatherIcon from "feather-icons-react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import {
@@ -13,8 +13,19 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
+import { format } from "date-fns";
+import { Calendar as CalendarIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Calendar } from "@/components/ui/calendar";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 const Contactform = () => {
+  const [date, setDate] = React.useState<Date>();
+
   return (
     <>
       <div className="px-3 py-7 lg:py-12 bg-gray-50">
@@ -70,6 +81,48 @@ const Contactform = () => {
                     </SelectContent>
                   </Select>
                 </div>
+                <div className="col-span-3">
+                  <label className="text-gray-500 text-sm">Location</label>
+                  <Select>
+                    <SelectTrigger className="w-full md:col-span-3">
+                      <SelectValue placeholder="Select Location" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="Toronto">Toronto</SelectItem>
+                      <SelectItem value="Downtown">Downtown</SelectItem>
+                      <SelectItem value="Mexico">Mexico</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="col-span-3">
+                  <label className="text-gray-500 text-sm">Date</label>
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <Button
+                        variant={"outline"}
+                        className={cn(
+                          "w-full md:col-span-3 justify-start text-left font-normal",
+                          !date && "text-muted-foreground"
+                        )}
+                      >
+                        <CalendarIcon className="mr-2 h-4 w-4" />
+                        {date ? (
+                          format(date, "PPP")
+                        ) : (
+                          <span>Appointment date</span>
+                        )}
+                      </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0">
+                      <Calendar
+                        mode="single"
+                        selected={date}
+                        onSelect={setDate}
+                        initialFocus
+                      />
+                    </PopoverContent>
+                  </Popover>
+                </div>
                 <div className="col-span-6">
                   <Button className="w-full" variant={"new"}>
                     Book Appointment
@@ -79,7 +132,7 @@ const Contactform = () => {
             </div>
           </div>
 
-          <div className="mt-12 mb-6">
+          <div className="mt-12">
             <h6 className="text-sm text-sky-600 mb-3">Connect to Us</h6>
             <h2 className="text-2xl text-sky-900 font-semibold mb-3">
               Get in Touch

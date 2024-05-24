@@ -102,13 +102,6 @@ const Banner = () => {
             height={1000}
           />
           <Image
-            src="/doctor-3.jpeg"
-            alt="doctors"
-            className="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full border-2 border-white shadow-md -ml-4 sm:-ml-7"
-            width={1500}
-            height={1000}
-          />
-          <Image
             src="/doctor-4.jpeg"
             alt="doctors"
             className="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full border-2 border-white shadow-md -ml-4 sm:-ml-7"
