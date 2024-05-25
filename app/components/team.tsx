@@ -34,7 +34,7 @@ const Team = () => {
                         icon="phone-call"
                         className="float-left size-6 my-5 mr-4 text-white"
                       />
-                      <h2 className="text-md font-semibold">Call US</h2>
+                      <h2 className="text-md font-semibold">Call Us</h2>
                       <h5 className="text-sm font-light leading-4">
                         for immediate assistance
                       </h5>
