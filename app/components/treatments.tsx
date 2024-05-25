@@ -18,7 +18,7 @@ const treatments = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-4 gap-5 mt-7">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mt-7">
             <Servicebox
               image="cosmetic-dentistry"
               caption="Cosmetic Dentistry"
