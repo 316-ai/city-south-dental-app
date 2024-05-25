@@ -8,6 +8,7 @@ import Topchoice from "./components/topchoice";
 import Witness from "./components/witness";
 import Faq from "./components/faq";
 import Servicecarousal from "./components/servicescarousal";
+import Team from "./components/team";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Servicecarousal />
         <Topchoice />
         <Witness />
+        <Team />
         <Faq />
       </section>
       <Footer />
