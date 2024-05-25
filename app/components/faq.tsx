@@ -16,31 +16,54 @@ const Faq = () => {
 
   const items = [
     {
-      title: "Question 0",
-      content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime numquam quidem delectus eaque sunt illum quod ducimus doloremque ratione sapiente",
+      "title": "Are you seeking a dentist in Brampton?",
+      "content": "We’re welcoming new patients! Learn more about our clinic and what you can expect at your first visit, along with payment and financing options. [REQUEST APPOINTMENT](#)"
     },
     {
-      title: "Question 1",
-      content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime numquam quidem delectus eaque sunt illum quod ducimus doloremque ratione sapiente",
+      "title": "What should I expect at my first visit?",
+      "content": "Please arrive about 10 minutes early so that you’ll have enough time to complete a New Patient form. [NEW PATIENT FORM](#)"
     },
     {
-      title: "Question 2",
-      content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime numquam quidem delectus eaque sunt illum quod ducimus doloremque ratione sapiente",
+      "title": "What does the initial examination include?",
+      "content": "Your dentist will review your dental and medical history and perform a comprehensive dental exam. This includes examining your teeth, gums, bite, and jaw, an oral cancer screening, and any necessary X-rays."
     },
     {
-      title: "Question 3",
-      content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime numquam quidem delectus eaque sunt illum quod ducimus doloremque ratione sapiente",
+      "title": "What is the treatment plan process?",
+      "content": "The dentist will create a long-term dental treatment plan for you based on your history and examination. You will have the opportunity to ask any questions about your dental health and treatment options."
     },
     {
-      title: "Question 4",
-      content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime numquam quidem delectus eaque sunt illum quod ducimus doloremque ratione sapiente",
+      "title": "How do insurance and payment work?",
+      "content": "We can direct bill your insurance company and our administrative team is happy to assist you in understanding your insurance plan better. The full treatment cost must be paid at the time of your appointment. We accept payment by cash, cheque, debit, or most major credit cards."
     },
-  ];
+    {
+      "title": "What features does your clinic offer?",
+      "content": "Our clinic offers a number of features, including: Convenient Location, Convenient Paid Parking, Same-Day Appointments, Multiple Appointment Bookings for Families, Short Wait Times."
+    },
+    {
+      "title": "How can I book an appointment?",
+      "content": "To book an appointment at City South Dental of Brampton, please contact our office during our regular business hours."
+    },
+    {
+      "title": "How do I cancel or reschedule an appointment?",
+      "content": "To cancel or reschedule an appointment, please call us as soon as possible so another patient may be able to use the space in our schedule."
+    },
+    {
+      "title": "Do you offer appointment reminders?",
+      "content": "In the days before your appointment, you will receive automated phone, text, or email appointment reminders from us. If you need to cancel or reschedule an appointment, please call us as soon as possible to let us know."
+    },
+    {
+      "title": "Do you provide services in any languages other than English?",
+      "content": "Yes, our office is able to provide dental services in English, Hindi, Punjabi, Farsi, Arabic, and Gujarati. If you have a language preference, please advise us when booking your appointment."
+    },
+    {
+      "title": "Does your clinic have on-site parking?",
+      "content": "Yes, we have convenient free parking available for all our patients. We are also easily accessible by public transit."
+    },
+    {
+      "title": "Do you offer support for anxious patients?",
+      "content": "Anxiety or fear around dental appointments is very common and it can prevent people from getting the dental care they need. If this sounds like you, don’t fret. The team at City South Dental of Brampton has a variety of practices in place, including dental sedation options, to help you relax during your appointment."
+    }
+  ];  
 
   const toggleFaq = (index: number) => {
     setActiveIndex((prevActiveIndex) => {

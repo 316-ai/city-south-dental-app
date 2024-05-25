@@ -39,10 +39,10 @@ const Servicecarousal = () => {
         <div className="lg:container mx-auto">
           <div>
             <h6 className="text-sm text-sky-600 mb-3 text-center">
-              Sub Header
+              Comprehensive Care
             </h6>
             <h2 className="text-2xl text-sky-900 font-semibold text-center">
-              Our Dental Offerings
+              Our Dental Services
             </h2>
           </div>
 
@@ -60,7 +60,7 @@ const Servicecarousal = () => {
                 <Servicebox
                   image="cosmetic-dentistry"
                   caption="Cosmetic Dentistry"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloremque molestias. Eveniet, rem et."
+                  description="Enhance your smile with our cosmetic dentistry services, including teeth whitening, veneers, and more. Achieve the smile you've always wanted."
                 />
               </div>
             </SwiperSlide>
@@ -69,7 +69,7 @@ const Servicecarousal = () => {
                 <Servicebox
                   image="pediatric-dentistry"
                   caption="Pediatric Dentistry"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloremque molestias. Eveniet, rem et."
+                  description="Our pediatric dentistry services ensure that your child's dental health is in good hands. We provide gentle and comprehensive care for young smiles."
                 />
               </div>
             </SwiperSlide>
@@ -78,7 +78,7 @@ const Servicecarousal = () => {
                 <Servicebox
                   image="oral-surgery"
                   caption="Oral Surgery"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloremque molestias. Eveniet, rem et."
+                  description="Our oral surgery services cover a range of procedures, from extractions to corrective jaw surgery. Trust our skilled surgeons for safe and effective treatment."
                 />
               </div>
             </SwiperSlide>
@@ -86,8 +86,8 @@ const Servicecarousal = () => {
               <div className="py-4">
                 <Servicebox
                   image="dental-checkup"
-                  caption="Dental Checkup"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloremque molestias. Eveniet, rem et."
+                  caption="Dental Checkups"
+                  description="Regular dental checkups are essential for maintaining optimal oral health. Schedule your checkup today to keep your smile healthy and bright."
                 />
               </div>
             </SwiperSlide>
@@ -96,7 +96,7 @@ const Servicecarousal = () => {
                 <Servicebox
                   image="gum-surgery"
                   caption="Gum Surgery"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloremque molestias. Eveniet, rem et."
+                  description="We offer advanced gum surgery procedures to treat periodontal disease and improve your gum health. Restore the foundation of your smile with our expert care."
                 />
               </div>
             </SwiperSlide>
@@ -105,7 +105,7 @@ const Servicecarousal = () => {
                 <Servicebox
                   image="implants"
                   caption="Dental Implants"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloremque molestias. Eveniet, rem et."
+                  description="Replace missing teeth with our high-quality dental implants. Enjoy a natural-looking and durable solution that restores both function and aesthetics."
                 />
               </div>
             </SwiperSlide>
@@ -114,7 +114,7 @@ const Servicecarousal = () => {
                 <Servicebox
                   image="sealants"
                   caption="Dental Sealants"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloremque molestias. Eveniet, rem et."
+                  description="Protect your teeth from decay with dental sealants. This quick and painless procedure creates a barrier against cavities, keeping your teeth strong and healthy."
                 />
               </div>
             </SwiperSlide>
@@ -123,12 +123,13 @@ const Servicecarousal = () => {
                 <Servicebox
                   image="aligners"
                   caption="Teeth Alignment"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloremque molestias. Eveniet, rem et."
+                  description="Straighten your teeth with our advanced teeth alignment options, including braces and Invisalign. Achieve a beautiful, straight smile with our personalized treatments."
                 />
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
+
       </div>
     </>
   );
