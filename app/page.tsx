@@ -9,6 +9,7 @@ import Witness from "./components/witness";
 import Faq from "./components/faq";
 import Servicecarousal from "./components/servicescarousal";
 import Team from "./components/team";
+import Testimonials from "./components/testimonials";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Topchoice />
         <Witness />
         <Team />
+        <Testimonials />
         <Faq />
       </section>
       <Footer />
