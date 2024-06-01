@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import FeatherIcon from "feather-icons-react";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const Footer = () => {
@@ -20,7 +17,11 @@ const Footer = () => {
                 height={10}
               />
               <p className="text-sm font-light text-gray-600 pr-8">
-              At City South Dental in Brampton, we offer top-notch dental care using the latest technology. Our skilled professionals provide comprehensive treatments, from preventive care to advanced procedures, ensuring optimal oral health for the Brampton community.
+                At City South Dental in Brampton, we offer top-notch dental care
+                using the latest technology. Our skilled professionals provide
+                comprehensive treatments, from preventive care to advanced
+                procedures, ensuring optimal oral health for the Brampton
+                community.
               </p>
             </div>
             <div className="col-span-8 md:col-span-2 lg:col-span-1 flex flex-col justify-between">

@@ -1,10 +1,3 @@
-"use client";
-
-import Link from "next/link";
-import FeatherIcon from "feather-icons-react";
-import { useEffect, useState } from "react";
-import Image from "next/image";
-
 const Pagebanner = ({ name }: any) => {
   return (
     <>

@@ -1,4 +1,3 @@
-import Blogcard from "@/app/components/blogcard";
 import Footer from "@/app/components/footer";
 import Navbar from "@/app/components/navbar";
 import Pagebanner from "@/app/components/pagebanner";
@@ -14,14 +13,6 @@ export default function Blogsdetail() {
         <section className="blogs px-3 py-7 lg:py-12 bg-white">
           <div className="lg:container mx-auto">
             <div>
-              {/* <Image
-                src="/happy-customer.jpeg"
-                alt="dots"
-                width={1000}
-                height={0}
-                className="w-full h-[360px] object-cover rounded-3xl shadow mb-6"
-              /> */}
-
               <h6 className="text-sm text-sky-600">mini caption</h6>
               <h1 className="text-2xl text-sky-900 font-semibold mt-2 mb-4">
                 Building Healthy Smiles And Happy Lives

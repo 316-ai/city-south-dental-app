@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "../components/navbar";
 import Story from "../components/story";
 import Footer from "../components/footer";
@@ -13,13 +12,6 @@ export default function About() {
         <Pagebanner name="About Us" />
         <Story />
         <Topchoice />
-        {/* <Image
-          src="/banner.jpeg"
-          alt="banner"
-          className="w-full"
-          width={1500}
-          height={1000}
-        /> */}
       </section>
       <Footer />
     </>

@@ -1,10 +1,6 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
-import FeatherIcon from "feather-icons-react";
-import { useEffect, useState } from "react";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import {
   Select,

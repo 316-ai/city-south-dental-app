@@ -1,9 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import FeatherIcon from "feather-icons-react";
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import React from "react";
 import { Input } from "@/components/ui/input";
 import {
   Select,

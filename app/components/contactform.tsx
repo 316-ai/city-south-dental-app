@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import FeatherIcon from "feather-icons-react";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import {

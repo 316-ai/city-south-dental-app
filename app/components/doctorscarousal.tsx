@@ -1,15 +1,11 @@
 "use client";
 
-import Link from "next/link";
-import FeatherIcon from "feather-icons-react";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/bundle";
-import Servicebox from "./servicebox";
 import Doctorsbox from "./doctorsbox";
 
 const Doctorscarousal = () => {

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "./components/navbar";
 import Banner from "./components/banner";
 import Search from "./components/search";
