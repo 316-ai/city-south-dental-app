@@ -59,10 +59,10 @@ const Testimonials = () => {
                   <span className="text-gray-300">★</span>
                 </div>
                 <p className="line-clamp-3 text-sm text-center text-gray-800 font-light w-10/12  xl:w-1/2 mx-auto mb-5">
-                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Impedit magni atque reiciendis beatae fugit optio obcaecati
                   eius culpa, ipsum deserunt veniam nisi, saepe, quam
-                  necessitatibus minus velit? Reprehenderit, quos illum."
+                  necessitatibus minus velit? Reprehenderit, quos illum.
                 </p>
                 <Image
                   src="/doctor-1.jpeg"
@@ -89,10 +89,10 @@ const Testimonials = () => {
                   <span className="text-gray-300">★</span>
                 </div>
                 <p className="line-clamp-3 text-sm text-center text-gray-800 font-light w-10/12  xl:w-1/2 mx-auto mb-5">
-                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Impedit magni atque reiciendis beatae fugit optio obcaecati
                   eius culpa, ipsum deserunt veniam nisi, saepe, quam
-                  necessitatibus minus velit? Reprehenderit, quos illum."
+                  necessitatibus minus velit? Reprehenderit, quos illum.
                 </p>
                 <Image
                   src="/doctor-1.jpeg"
@@ -119,10 +119,10 @@ const Testimonials = () => {
                   <span className="text-gray-300">★</span>
                 </div>
                 <p className="line-clamp-3 text-sm text-center text-gray-800 font-light w-10/12  xl:w-1/2 mx-auto mb-5">
-                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Impedit magni atque reiciendis beatae fugit optio obcaecati
                   eius culpa, ipsum deserunt veniam nisi, saepe, quam
-                  necessitatibus minus velit? Reprehenderit, quos illum."
+                  necessitatibus minus velit? Reprehenderit, quos illum.
                 </p>
                 <Image
                   src="/doctor-1.jpeg"
