@@ -7,6 +7,7 @@ import { Navigation, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/bundle";
 import Servicebox from "./servicebox";
+import { API_URL, IMAGE_URL } from "@/constants";
 
 const Servicecarousal = () => {
   const [slidesPerView, setSlidesPerView] = useState(1);
@@ -30,6 +31,40 @@ const Servicecarousal = () => {
     };
   }, []);
 
+  const query = "*[_type=='treatments']";
+
+  const [treatments, setTreatments] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const encodedQuery = encodeURIComponent(query);
+        const fullUrl = `${API_URL}?query=${encodedQuery}`;
+
+        const response = await fetch(fullUrl);
+        const data = await response.json();
+        console.log(data);
+        setTreatments(data.result); // Assuming "result" holds the treatments array
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const getImageUrl = (ref: string) => {
+    return `${IMAGE_URL}${ref.replace("image-", "").replace(/-(\w+)$/, ".$1")}`;
+  };
+
+  const getDescriptionText = (body: any) => {
+    return body
+      .map((block: any) =>
+        block.children.map((span: any) => span.text).join("")
+      )
+      .join("\n");
+  };
+
   return (
     <>
       <div className="px-3 py-7 lg:py-12 bg-white">
@@ -52,78 +87,23 @@ const Servicecarousal = () => {
             loop={true}
             className="w-full mt-8"
           >
-            <SwiperSlide>
-              <div className="py-4">
-                <Servicebox
-                  image="cosmetic-dentistry"
-                  caption="Cosmetic Dentistry"
-                  description="Enhance your smile with our cosmetic dentistry services, including teeth whitening, veneers, and more. Achieve the smile you've always wanted."
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-4">
-                <Servicebox
-                  image="pediatric-dentistry"
-                  caption="Pediatric Dentistry"
-                  description="Our pediatric dentistry services ensure that your child's dental health is in good hands. We provide gentle and comprehensive care for young smiles."
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-4">
-                <Servicebox
-                  image="oral-surgery"
-                  caption="Oral Surgery"
-                  description="Our oral surgery services cover a range of procedures, from extractions to corrective jaw surgery. Trust our skilled surgeons for safe and effective treatment."
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-4">
-                <Servicebox
-                  image="dental-checkup"
-                  caption="Dental Checkups"
-                  description="Regular dental checkups are essential for maintaining optimal oral health. Schedule your checkup today to keep your smile healthy and bright."
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-4">
-                <Servicebox
-                  image="gum-surgery"
-                  caption="Gum Surgery"
-                  description="We offer advanced gum surgery procedures to treat periodontal disease and improve your gum health. Restore the foundation of your smile with our expert care."
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-4">
-                <Servicebox
-                  image="implants"
-                  caption="Dental Implants"
-                  description="Replace missing teeth with our high-quality dental implants. Enjoy a natural-looking and durable solution that restores both function and aesthetics."
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-4">
-                <Servicebox
-                  image="sealants"
-                  caption="Dental Sealants"
-                  description="Protect your teeth from decay with dental sealants. This quick and painless procedure creates a barrier against cavities, keeping your teeth strong and healthy."
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="py-4">
-                <Servicebox
-                  image="aligners"
-                  caption="Teeth Alignment"
-                  description="Straighten your teeth with our advanced teeth alignment options, including braces and Invisalign. Achieve a beautiful, straight smile with our personalized treatments."
-                />
-              </div>
-            </SwiperSlide>
+            {treatments.length > 0 ? (
+              treatments.map((treatment: any) => (
+                <SwiperSlide key={treatment._id}>
+                  <div className="py-4">
+                    <Servicebox
+                      key={treatment._id}
+                      image={getImageUrl(treatment.icon.asset._ref)}
+                      caption={treatment.title}
+                      description={getDescriptionText(treatment.body)}
+                      slug={treatment.slug.current}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))
+            ) : (
+              <p>Loading...</p>
+            )}
           </Swiper>
         </div>
       </div>

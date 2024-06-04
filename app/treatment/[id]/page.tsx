@@ -3,7 +3,7 @@ import Navbar from "@/app/components/navbar";
 import Pagebanner from "@/app/components/pagebanner";
 import Image from "next/image";
 
-export default function Blogsdetail() {
+export default function Treatments() {
   return (
     <>
       <Navbar />

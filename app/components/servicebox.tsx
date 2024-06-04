@@ -3,17 +3,19 @@ import FeatherIcon from "feather-icons-react";
 import Image from "next/image";
 
 interface ServiceboxProps {
+  key: string;
   image: string;
   caption: string;
   description: string;
+  slug: string;
 }
 
-const Servicebox = ({ image, caption, description }: ServiceboxProps) => {
+const Servicebox = ({ image, caption, description, slug }: ServiceboxProps) => {
   return (
     <>
       <div className="transition-all rounded-3xl overflow-hidden border shadow hover:shadow-lg py-4 px-5 bg-gray-50">
         <Image
-          src={`/services/${image}.svg`}
+          src={image}
           alt="pediatric-dentistry"
           className="mb-3"
           width={74}
@@ -24,7 +26,7 @@ const Servicebox = ({ image, caption, description }: ServiceboxProps) => {
           {description}
         </p>
         <Link
-          href="/treatment/123"
+          href={`/treatment/${slug}`}
           className="text-sm flex items-center uppercase text-sky-600 hover:underline mt-3"
         >
           <span>Read more</span>
