@@ -10,7 +10,7 @@ import { useParams } from "next/navigation";
 
 interface Treatment {
   id: string;
-  body: any;
+  body: string[];
   title: string;
   image:any;
   icon:any;
