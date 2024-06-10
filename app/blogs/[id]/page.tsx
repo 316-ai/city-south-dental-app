@@ -1,10 +1,76 @@
+'use client'
 import Blogcard from "@/app/components/blogcard";
 import Footer from "@/app/components/footer";
 import Navbar from "@/app/components/navbar";
 import Pagebanner from "@/app/components/pagebanner";
+import { API_URL, IMAGE_URL } from "@/constants";
 import Image from "next/image";
+import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
+
+interface Blog {
+  id: string;
+  body: string[];
+  title: string;
+  image:any;
+  icon:any;
+  date:string;
+}
 
 export default function Blogsdetail() {
+  const { id } = useParams();
+  const [blog, setBlogs] = useState<Blog | null>(null);
+
+  useEffect(() => {
+    if (id) { // Null check for id
+      const fetchData = async () => {
+        try {
+          const query = `*[_type=='blogs'][slug.current == '${id}']`;
+          const encodedQuery = encodeURIComponent(query);
+          const fullUrl = `${API_URL}?query=${encodedQuery}`;
+
+          const response = await fetch(fullUrl);
+          const data = await response.json();
+          setBlogs({
+            id: data.result[0]._id,
+            body: getDescriptionText(data.result[0].body),
+            title: data.result[0].title,
+            image:getImageUrl(data.result[0].icon.asset._ref),
+            icon:getImageUrl(data.result[0].icon.asset._ref),
+            date:formatDate(data.result[0]._updatedAt),
+          }||null); // Assuming "result" holds the treatments array
+        } catch (error) {
+          console.error(error);
+        }
+      };
+
+      fetchData();
+    }
+  }, [id]); // Add id to the dependency array
+  
+  const getDescriptionText = (body: any): string[] => {
+    return body
+      .map((block: any) =>
+        block.children.map((span: any) => span.text).join("")
+      )
+      .join("\n")
+      .split("\n")
+      .filter((paragraph: string) => paragraph.trim() !== "");
+  };
+
+  const getImageUrl = (ref: string): string => {
+    return `${IMAGE_URL}${ref.replace("image-", "").replace(/-(\w+)$/, ".$1")}`;
+  };
+
+  const formatDate = (dateString: string) => {
+    const options: Intl.DateTimeFormatOptions = {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    };
+    return new Date(dateString).toLocaleDateString('en-GB', options);
+  };
+  
   return (
     <>
       <Navbar />
