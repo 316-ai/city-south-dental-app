@@ -18,7 +18,7 @@ interface Treatment {
 
 export default function Treatments() {
   const { id } = useParams();
-  const [treatment, setTreatment] = useState<Treatment | null>(null);
+  const [treatment, setTreatment] = useState<Treatment>();
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
