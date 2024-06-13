@@ -6,7 +6,7 @@ import Pagebanner from "@/app/components/pagebanner";
 import { API_URL, IMAGE_URL } from "@/constants";
 import Image from "next/image";
 import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 
 interface Blog {
   id: string;
@@ -28,15 +28,14 @@ export default function Blogsdetail() {
           const query = `*[_type=='blogs'][slug.current == '${id}']`;
           const encodedQuery = encodeURIComponent(query);
           const fullUrl = `${API_URL}?query=${encodedQuery}`;
-
           const response = await fetch(fullUrl);
           const data = await response.json();
           setBlogs({
             id: data.result[0]._id,
             body: getDescriptionText(data.result[0].body),
             title: data.result[0].title,
-            image:getImageUrl(data.result[0].icon.asset._ref),
-            icon:getImageUrl(data.result[0].icon.asset._ref),
+            image:"getImageUrl(data.result[0].icon.asset._ref)",
+            icon:"getImageUrl(data.result[0].icon.asset._ref)",
             date:formatDate(data.result[0]._updatedAt),
           }||null); // Assuming "result" holds the treatments array
         } catch (error) {
@@ -70,7 +69,7 @@ export default function Blogsdetail() {
     };
     return new Date(dateString).toLocaleDateString('en-GB', options);
   };
-  
+
   return (
     <>
       <Navbar />
@@ -92,59 +91,30 @@ export default function Blogsdetail() {
               /> */}
 
               <span className="border px-3 py-1 rounded-lg text-sm text-gray-400">
-                12 August, 2023
+                {blog?.date}
               </span>
-              <h6 className="text-sm text-sky-600 mt-4">mini caption</h6>
+              <h6 className="text-sm text-sky-600 mt-4">Blog</h6>
               <h1 className="text-2xl text-sky-900 font-semibold mt-2 mb-4">
-                Building Healthy Smiles And Happy Lives
+                {blog?.title}
               </h1>
 
               <h2 className="text-md font-semibold text-gray-500 mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                tenetur maxime repellat quae ducimus?
+              {blog?.body[0] }
               </h2>
 
               <div className="grid grid-cols-8 gap-12 md:gap-8 my-6">
                 <div className="col-span-8 md:col-span-5 flex flex-col">
-                  <p className="text-sm text-gray-600 font-thin mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur voluptatem fugit impedit eveniet! Atque, quas
-                    voluptates quae culpa laboriosam pariatur quos fuga,
-                    deserunt, ipsum laborum rem officiis vitae eos. Error Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                    veritatis cupiditate ut quibusdam rerum reprehenderit
-                    cumque.
-                  </p>
-                  <p className="text-sm text-sky-900 mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Blanditiis ullam recusandae natus voluptatibus corporis
-                    aperiam doloribus unde necessitatibus in. Perspiciatis saepe
-                    ullam sed earum? Similique, explicabo recusandae tempore
-                    veniam minima ea Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Ab a totam hic ducimus! Ullam itaque
-                    perspiciatis, nobis ipsam velit commodi? Lorem ipsum dolor,
-                    sit amet consectetur adipisicing elit. Dolore totam quae
-                    quasi et porro ex odio accusamus, ut incidunt omnis sapiente
-                    ipsam laudantium qui necessitatibus. Laborum?
-                  </p>
-                  <p className="text-sm text-gray-600 font-thin mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur voluptatem fugit impedit eveniet! Atque, quas
-                    voluptates quae culpa laboriosam pariatur quos fuga,
-                    deserunt, ipsum laborum rem officiis vitae eos. Error Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                    veritatis cupiditate ut quibusdam rerum reprehenderit
-                    cumque.
-                  </p>
-                  <p className="text-sm text-gray-600 font-thin mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur voluptatem fugit impedit eveniet! Atque, quas
-                    voluptates quae culpa laboriosam pariatur quos fuga,
-                    deserunt, ipsum laborum rem officiis vitae eos. Error Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                    veritatis cupiditate ut quibusdam rerum reprehenderit
-                    cumque.
-                  </p>
+            
+                  {blog?.body.map((paragraph, index) => (
+                    <p
+                      key={index}
+                      className={`text-sm mb-5 ${
+                        index % 2 === 0 ? "text-gray-600 " : "text-sky-900"
+                      }`}
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
                 </div>
 
                 <div className="col-span-4 md:col-span-3">
