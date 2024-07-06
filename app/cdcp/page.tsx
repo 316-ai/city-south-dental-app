@@ -250,7 +250,7 @@ export default function Cdcp() {
                   recommendation of the oral health provider, before commencing
                   treatment to ensure coverage under the plan. These treatments
                   and/or services are determined with consideration of an
-                  individual's oral health history and existing medical
+                  individuals oral health history and existing medical
                   conditions. Services that require preauthorization will be
                   accessible starting November 2024.
                 </p>
