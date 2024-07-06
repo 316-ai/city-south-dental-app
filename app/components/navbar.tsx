@@ -122,6 +122,12 @@ const Navbar = () => {
                   <h2>About Us</h2>
                 </li>
               </Link>
+              <Link href="/cdcp">
+                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                  <h2>Accepting CDCP</h2>
+                </li>
+              </Link>
+              
               <Link href="/blogs">
                 <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
                   <h2>Blogs</h2>
@@ -157,6 +163,11 @@ const Navbar = () => {
           <Link href="/about">
             <li className="p-3 border-b font-semibold hover:text-sky-600">
               About Us
+            </li>
+          </Link>
+          <Link href="/contact">
+            <li className="p-3 border-b font-semibold hover:text-sky-700">
+              Accepting CDCP
             </li>
           </Link>
           <Link href="/blogs">
