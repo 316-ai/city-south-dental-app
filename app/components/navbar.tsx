@@ -165,7 +165,7 @@ const Navbar = () => {
               About Us
             </li>
           </Link>
-          <Link href="/contact">
+          <Link href="/cdcp">
             <li className="p-3 border-b font-semibold hover:text-sky-700">
               Accepting CDCP
             </li>
