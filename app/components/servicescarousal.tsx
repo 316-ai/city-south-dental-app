@@ -97,6 +97,7 @@ const Servicecarousal = () => {
                       caption={treatment.title}
                       description={getDescriptionText(treatment.body)}
                       slug={treatment.slug.current}
+                      basePath="treatment"
                     />
                   </div>
                 </SwiperSlide>

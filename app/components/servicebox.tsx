@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FeatherIcon from "feather-icons-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface ServiceboxProps {
   key: string;
@@ -8,9 +9,10 @@ interface ServiceboxProps {
   caption: string;
   description: string;
   slug: string;
+  basePath: string;
 }
 
-const Servicebox = ({ image, caption, description, slug }: ServiceboxProps) => {
+const Servicebox = ({ image, caption, description, slug,basePath }: ServiceboxProps) => {
   return (
     <>
       <div className="transition-all rounded-3xl overflow-hidden border shadow hover:shadow-lg py-4 px-5 bg-gray-50">
@@ -26,7 +28,7 @@ const Servicebox = ({ image, caption, description, slug }: ServiceboxProps) => {
           {description}
         </p>
         <Link
-          href={`/treatment/${slug}`}
+          href={`/${basePath}/${slug}`}
           className="text-sm flex items-center uppercase text-sky-600 hover:underline mt-3"
         >
           <span>Read more</span>
