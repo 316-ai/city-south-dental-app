@@ -83,16 +83,16 @@ const Appointmentform = () => {
                 you are informed and involved in your care. 
               </p>
               <p className="text-gray-600 mb-4">
-                During the appointment, we'll review your medical and dental
+                During the appointment, we will review your medical and dental
                 history to understand any concerns you may have and how
                 medications or health conditions could affect your dental care.
                 Our dentist will then examine your mouth, teeth, and gums,
                 looking for any existing dental issues, followed by a
                 professional cleaning to remove plaque and tartar buildup.
-                X-rays may be taken if necessary, and we'll discuss the results
-                with you. Finally, based on our findings, we'll create a
+                X-rays may be taken if necessary, and we will discuss the results
+                with you. Finally, based on our findings, we will create a
                 personalized treatment plan tailored to your needs, schedule,
-                and comfort, ensuring you're fully informed and involved in your
+                and comfort, ensuring you are fully informed and involved in your
                 dental care.
               </p>
             </div>
@@ -257,7 +257,7 @@ const Appointmentform = () => {
                 We proudly maintain a welcoming environment that celebrates
                 diversity and inclusivity, including being a safe space for
                 LGBTQ+ patients. Our compassionate staff is committed to
-                respectful care that values patients' comfort and safety. Our
+                respectful care that values patients comfort and safety. Our
                 practice is dedicated to providing high-quality dental service
                 with sensitivity to the unique needs of LGBTQ+ individuals in a
                 clinic free of judgment or discrimination.
@@ -308,7 +308,7 @@ const Appointmentform = () => {
                 These principles ensure that patient privacy and confidentiality
                 are maintained while also complying with legal and ethical
                 standards for the handling of personal information in healthcare
-                settings. It's important for your clinic to continue
+                settings. Its important for your clinic to continue
                 implementing these practices to uphold patient trust and comply
                 with privacy regulations.
               </p>
@@ -317,7 +317,7 @@ const Appointmentform = () => {
                 Privacy Policy, which emphasizes responsibility for all personal
                 information, including transfers to third parties. Personal
                 information is collected, used, or disclosed with the
-                individual's knowledge and consent, except in emergencies or as
+                individuals knowledge and consent, except in emergencies or as
                 permitted by law. The purposes for collecting, using, or
                 disclosing personal information are clearly identified and
                 documented upfront. Information is not used or disclosed for
