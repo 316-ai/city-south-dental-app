@@ -19,6 +19,8 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import FeatherIcon from "feather-icons-react";
+import Link from "next/link";
 
 const Search = () => {
   const [date, setDate] = React.useState<Date>();
@@ -32,63 +34,54 @@ const Search = () => {
     <div className="px-3 py-2 z-20">
       <div className="lg:container mx-auto">
         <div className="shadow-md px-5 py-8 rounded-xl relative z-10 -mt-24 bg-white">
-          <h2 className="text-xl lg:text-2xl text-gray-700 font-semibold mb-6">
-            Book Appointment
-          </h2>
-          <div className="grid md:grid-cols-11 gap-4">
-            <Select>
-              <SelectTrigger className="w-full md:col-span-3">
-                <SelectValue placeholder="Select Location" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="Toronto">Toronto</SelectItem>
-                <SelectItem value="Downtown">Downtown</SelectItem>
-                <SelectItem value="Mexico">Mexico</SelectItem>
-              </SelectContent>
-            </Select>
+          <div>
+            <h2 className="text-2xl text-sky-900 font-semibold mb-3">
+              Get in Touch
+            </h2>
 
-            <Popover>
-              <PopoverTrigger asChild>
-                <Button
-                  variant={"outline"}
-                  className={cn(
-                    "w-full md:col-span-3 justify-start text-left font-normal",
-                    !date && "text-muted-foreground"
-                  )}
-                >
-                  <CalendarIcon className="mr-2 h-4 w-4" />
-                  {date ? format(date, "PPP") : <span>Appointment date</span>}
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent className="w-auto p-0">
-                <Calendar
-                  mode="single"
-                  selected={date}
-                  onSelect={setDate}
-                  initialFocus
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
+              <div>
+                <FeatherIcon
+                  icon="globe"
+                  className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
                 />
-              </PopoverContent>
-            </Popover>
-
-            <Select>
-              <SelectTrigger className="w-full md:col-span-3">
-                <SelectValue placeholder="Persons" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="1">1 Person</SelectItem>
-                <SelectItem value="2">2 Persons</SelectItem>
-                <SelectItem value="3">3 Persons</SelectItem>
-                <SelectItem value="4">4 Persons</SelectItem>
-              </SelectContent>
-            </Select>
-
-            <Button
-              onClick={appointments}
-              className="w-full md:col-span-2"
-              variant={"new"}
-            >
-              Book Now
-            </Button>
+                <h1 className="text-sky-900 pt-1">Have Queries</h1>
+                <h6 className="text-sky-600 text-sm font-light">
+                  7700 Hurontario St 308, Brampton
+                </h6>
+              </div>
+              <Link
+                href="https://maps.app.goo.gl/Kmdk9fafCNWfunnC9"
+                target="_blank"
+              >
+                <FeatherIcon
+                  icon="map-pin"
+                  className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
+                />
+                <h1 className="text-sky-900 pt-1">Our Location</h1>
+                <h6 className="text-sky-600 text-sm font-light">
+                  7700 Hurontario St 308, Brampton
+                </h6>
+              </Link>
+              <Link href="tel:9054591742" target="_blank">
+                <FeatherIcon
+                  icon="phone-call"
+                  className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
+                />
+                <h1 className="text-sky-900 pt-1">Call Us</h1>
+                <h6 className="text-sky-600 text-sm font-light">9054591742</h6>
+              </Link>
+              <Link href="mailto:dentist@citysouthdental.com" target="_blank">
+                <FeatherIcon
+                  icon="mail"
+                  className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
+                />
+                <h1 className="text-sky-900 pt-1">Contact Support</h1>
+                <h6 className="text-sky-600 text-sm font-light">
+                  dentist@citysouthdental.com
+                </h6>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

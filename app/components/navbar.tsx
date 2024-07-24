@@ -4,12 +4,13 @@ import Link from "next/link";
 import FeatherIcon from "feather-icons-react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-
+import { usePathname } from "next/navigation";
 const Navbar = () => {
-  const [isMobileMenuOpen, setisMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
-    setisMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   useEffect(() => {
@@ -22,13 +23,13 @@ const Navbar = () => {
         !event.target.closest(".menu-popup") &&
         (!menuButton || !menuButton.contains(event.target))
       ) {
-        setisMobileMenuOpen(false);
+        setIsMobileMenuOpen(false);
       }
     };
 
     const handleEscapeKeyPress = (event: any) => {
       if (event.key === "Escape") {
-        setisMobileMenuOpen(false);
+        setIsMobileMenuOpen(false);
       }
     };
 
@@ -40,6 +41,8 @@ const Navbar = () => {
       document.addEventListener("keydown", handleEscapeKeyPress);
     };
   }, [isMobileMenuOpen]);
+
+  const isActive = (path:any) => (pathname === path ? "border-b-4 border-sky-600 text-sky-700" : "hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700");
 
   return (
     <>
@@ -107,43 +110,42 @@ const Navbar = () => {
           <div className="links hidden md:block text-sm">
             <ul className="flex gap-4">
               <Link href="/">
-                {/* // APPLY {"border-b-4 border-sky-600"} CLASSES TO ACTIVE ROUTE */}
-                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700 border-b-4 border-sky-600">
+                <li className={`ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold ${isActive("/")}`}>
                   <h2>Home</h2>
                 </li>
               </Link>
               <Link href="/about">
-                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                <li className={`ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold ${isActive("/about")}`}>
                   <h2>About Us</h2>
                 </li>
               </Link>
               <Link href="/treatment">
-                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                <li className={`ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold ${isActive("/treatment")}`}>
                   <div>Dental Services</div>
                 </li>
               </Link>
               <Link href="/procedures">
-                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                <li className={`ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold ${isActive("/procedures")}`}>
                   <div>Treatments & Procedures</div>
                 </li>
               </Link>
               <Link href="/cdcp">
-                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                <li className={`ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold ${isActive("/cdcp")}`}>
                   <h2>Accepting CDCP</h2>
                 </li>
               </Link>
               <Link href="/appointments">
-                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                <li className={`ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold ${isActive("/appointments")}`}>
                   <h2>Appointments</h2>
                 </li>
               </Link>
               <Link href="/blogs">
-                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                <li className={`ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold ${isActive("/blogs")}`}>
                   <h2>Blogs</h2>
                 </li>
               </Link>
               <Link href="/contact">
-                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
+                <li className={`ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold ${isActive("/contact")}`}>
                   <h2>Contact</h2>
                 </li>
               </Link>
@@ -159,43 +161,42 @@ const Navbar = () => {
       >
         <ul className="w-full text-gray-800 block gap-2">
           <Link href="/">
-            {/* // APPLY {"text-sky-700"} CLASS TO ACTIVE ROUTE */}
-            <li className="p-3 border-b font-semibold hover:text-sky-600 text-sky-700">
+            <li className={`p-3 border-b font-semibold ${isActive("/")}`}>
               Home
             </li>
           </Link>
           <Link href="/about">
-            <li className="p-3 border-b font-semibold hover:text-sky-600">
+            <li className={`p-3 border-b font-semibold ${isActive("/about")}`}>
               About Us
             </li>
           </Link>
           <Link href="/treatment">
-            <li className="p-3 border-b font-semibold hover:text-sky-600">
+            <li className={`p-3 border-b font-semibold ${isActive("/treatment")}`}>
               Treatment
             </li>
           </Link>
           <Link href="/procedures">
-                <li className="ease-in flex items-center duration-150 px-3 py-3 h-120px content-center uppercase font-semibold hover:border-b-4 hover:border-sky-500 text-gray-700 hover:text-sky-700">
-                  <div>Treatments & Procedures</div>
-                </li>
-              </Link>
+            <li className={`p-3 border-b font-semibold ${isActive("/procedures")}`}>
+              Treatments & Procedures
+            </li>
+          </Link>
           <Link href="/cdcp">
-            <li className="p-3 border-b font-semibold hover:text-sky-700">
+            <li className={`p-3 border-b font-semibold ${isActive("/cdcp")}`}>
               Accepting CDCP
             </li>
           </Link>
           <Link href="/appointments">
-            <li className="p-3 border-b font-semibold hover:text-sky-600">
+            <li className={`p-3 border-b font-semibold ${isActive("/appointments")}`}>
               Appointments
             </li>
           </Link>
           <Link href="/blogs">
-            <li className="p-3 border-b font-semibold hover:text-sky-700">
+            <li className={`p-3 border-b font-semibold ${isActive("/blogs")}`}>
               Blogs
             </li>
           </Link>
           <Link href="/contact">
-            <li className="p-3 border-b font-semibold hover:text-sky-700">
+            <li className={`p-3 border-b font-semibold ${isActive("/contact")}`}>
               Contact
             </li>
           </Link>

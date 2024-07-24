@@ -183,8 +183,7 @@ export default function Cdcp() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="blogs px-3 py-7 lg:py-12 bg-white">
+              <div className="blogs px-3 py-7 lg:py-12 bg-white">
               <h6 className="text-sm text-sky-600">
                 CDCP Program Acceptance and Enrollment
               </h6>
@@ -389,6 +388,8 @@ export default function Cdcp() {
                 </p>
               </div>
             </div>
+            </div>
+
           </div>
         </section>
       </section>

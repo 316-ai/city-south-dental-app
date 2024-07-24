@@ -4,7 +4,9 @@ import Footer from "@/app/components/footer";
 import Navbar from "@/app/components/navbar";
 import Pagebanner from "@/app/components/pagebanner";
 import { API_URL, IMAGE_URL } from "@/constants";
+import FeatherIcon from "feather-icons-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 import { use, useEffect, useState } from "react";
 
@@ -75,9 +77,7 @@ export default function Blogsdetail() {
       <Navbar />
       <section className="content">
         <Pagebanner
-          name=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum
-            amet perferendis commodi. Voluptate, quos."
-        />
+          name={blog?.title}        />
 
         <section className="blogs px-3 py-7 lg:py-12 bg-white">
           <div className="lg:container mx-auto">
@@ -141,6 +141,56 @@ export default function Blogsdetail() {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-x-5 md:gap-y-6">
               <Blogcard />
             </div>
+            <div className="mt-12">
+            <h6 className="text-sm text-sky-600 mb-3">Connect to Us</h6>
+            <h2 className="text-2xl text-sky-900 font-semibold mb-3">
+              Get in Touch
+            </h2>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
+              <div>
+                <FeatherIcon
+                  icon="globe"
+                  className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
+                />
+                <h1 className="text-sky-900 pt-1">Have Queries</h1>
+                <h6 className="text-sky-600 text-sm font-light">
+                  7700 Hurontario St 308, Brampton
+                </h6>
+              </div>
+              <Link
+                href="https://maps.app.goo.gl/Kmdk9fafCNWfunnC9"
+                target="_blank"
+              >
+                <FeatherIcon
+                  icon="map-pin"
+                  className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
+                />
+                <h1 className="text-sky-900 pt-1">Our Location</h1>
+                <h6 className="text-sky-600 text-sm font-light">
+                  7700 Hurontario St 308, Brampton
+                </h6>
+              </Link>
+              <Link href="tel:9054591742" target="_blank">
+                <FeatherIcon
+                  icon="phone-call"
+                  className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
+                />
+                <h1 className="text-sky-900 pt-1">Call Us</h1>
+                <h6 className="text-sky-600 text-sm font-light">9054591742</h6>
+              </Link>
+              <Link href="mailto:dentist@citysouthdental.com" target="_blank">
+                <FeatherIcon
+                  icon="mail"
+                  className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
+                />
+                <h1 className="text-sky-900 pt-1">Contact Support</h1>
+                <h6 className="text-sky-600 text-sm font-light">
+                  dentist@citysouthdental.com
+                </h6>
+              </Link>
+            </div>
+          </div>
           </div>
         </section>
       </section>
