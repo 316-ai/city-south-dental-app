@@ -7,7 +7,7 @@ import { Navigation, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/bundle";
 import Doctorsbox from "./doctorsbox";
-import { API_URL } from "@/constants";
+import { API_URL, IMAGE_URL } from "@/constants";
 
 interface Doctors {
   id: string;
@@ -54,7 +54,7 @@ const Doctorscarousal = () => {
         const response = await fetch(fullUrl);
         const data = await response.json();
         const result: Doctors[] = mapApiResultToDoctors(data); 
-        console.log(result);
+        console.log(">>>",result);
         setDoctors(result);
       } catch (error) {
         console.error(error);
@@ -64,13 +64,16 @@ const Doctorscarousal = () => {
     fetchData();
   }, []);
 
-
+  const getImageUrl = (ref: string) => {
+    return `${IMAGE_URL}${ref.replace("image-", "").replace(/-(\w+)$/, ".$1")}`;
+  };
+  
   const mapApiResultToDoctors = (apiResult: any): Doctors[] => {
     return apiResult.result.map((doctor: any) => ({
       id: doctor._id,
       name: doctor.name,
       description: doctor.description,
-      image: "getImageUrl(doctor.photo.asset._ref)"
+      image: getImageUrl(doctor.photo.asset._ref),
     }));
   };
 
@@ -88,7 +91,7 @@ const Doctorscarousal = () => {
     <SwiperSlide key={doctor.id}>
       <div className="py-4">
         <Doctorsbox
-          photo="/doctor-1.jpeg"
+          photo={doctor.image}
           name={doctor.name}
           brief={doctor.description}
         />
