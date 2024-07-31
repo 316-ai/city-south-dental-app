@@ -6,7 +6,7 @@ const Story = () => {
       <div className="px-3 py-2 pt-7 lg:pt-12">
         <div className="lg:container mx-auto">
           <div className="grid grid-cols-8 gap-12 md:gap-8">
-            <div className="col-span-8 lg:col-span-1 flex lg:flex-col justify-between flex-wrap gap-8">
+            {/* <div className="col-span-8 lg:col-span-1 flex lg:flex-col justify-between flex-wrap gap-8">
               <div className="flex-1 text-center lg:text-left">
                 <h2 className="text-4xl font-semibold text-sky-600">34+</h2>
                 <h6 className="text-sm text-gray-500">Awards Won</h6>
@@ -23,7 +23,7 @@ const Story = () => {
                 <h2 className="text-4xl font-semibold text-sky-600">10+</h2>
                 <h6 className="text-sm text-gray-500">Years of Experience</h6>
               </div>
-            </div>
+            </div> */}
             <div className="col-span-4 md:col-span-3">
               <Image
                 src="/healthy-smile.jpeg"

@@ -54,7 +54,6 @@ const Doctorscarousal = () => {
         const response = await fetch(fullUrl);
         const data = await response.json();
         const result: Doctors[] = mapApiResultToDoctors(data); 
-        console.log(">>>",result);
         setDoctors(result);
       } catch (error) {
         console.error(error);

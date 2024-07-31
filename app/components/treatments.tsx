@@ -17,7 +17,6 @@ const Treatments = () => {
 
         const response = await fetch(fullUrl);
         const data = await response.json();
-        console.log(data);
         setTreatments(data.result); 
       } catch (error) {
         console.error(error);

@@ -27,7 +27,6 @@ const Blogcard = () => {
 
         const response = await fetch(fullUrl);
         const data = await response.json();
-        console.log(data);
         setBlogs(data.result || []); // Assuming "result" holds the blogs array
       } catch (error) {
         console.error(error);

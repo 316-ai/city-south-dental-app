@@ -35,7 +35,6 @@ export default function Treatments() {
 
           const response = await fetch(fullUrl);
           const data = await response.json();
-          console.log("D",data)
           setTreatment({
             id: data.result[0]._id,
             body: getDescriptionText(data.result[0].body),
@@ -66,9 +65,6 @@ export default function Treatments() {
     return `${IMAGE_URL}${ref.replace("image-", "").replace(/-(\w+)$/, ".$1")}`;
   };
 
-  useEffect(()=>{
-    console.log(">>>",treatment);
-  })
   return (
     <>
       <Navbar />

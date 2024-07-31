@@ -35,7 +35,6 @@ export default function ProcedureCard() {
 
           const response = await fetch(fullUrl);
           const data = await response.json();
-          console.log("D",data)
           setProcedure({
             id: data.result[0]._id,
             body: getDescriptionText(data.result[0].body),
@@ -66,9 +65,7 @@ export default function ProcedureCard() {
     return `${IMAGE_URL}${ref.replace("image-", "").replace(/-(\w+)$/, ".$1")}`;
   };
 
-  useEffect(()=>{
-    console.log(">>>",procedure);
-  })
+ 
   return (
     <>
       <Navbar />

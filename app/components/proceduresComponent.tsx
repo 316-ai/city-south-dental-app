@@ -17,9 +17,6 @@ const ProcedureComponent = () => {
 
         const response = await fetch(fullUrl);
         const data = await response.json();
-
-        console.log(data);
-        console.log(data);
         setProcedures(data.result); 
       } catch (error) {
         console.error(error);
