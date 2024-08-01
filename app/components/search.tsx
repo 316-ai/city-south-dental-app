@@ -41,8 +41,8 @@ const Search = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
               <Link
-                href="https://maps.app.goo.gl/Kmdk9fafCNWfunnC9"
-                target="_blank"
+              href="https://maps.app.goo.gl/i3mL4BvvFXxBKGgF8"
+              target="_blank"
               >
                 <FeatherIcon
                   icon="map-pin"
