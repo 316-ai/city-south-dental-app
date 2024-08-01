@@ -75,6 +75,24 @@ const Appointmentform = () => {
                   early to your appointment so we can assist you.
                 </li>
               </ol>
+              <div className="mb-4">
+                  <a
+                    href="../../public/Medical_Dental History (1).pdf"
+                    download
+                    className="text-blue-500 underline"
+                  >
+                    Download New Patient Form
+                  </a>
+                </div>
+                <div className="mb-4">
+                  <a
+                    href="../../public/Personal Information Consent.pdf.pdf"
+                    download
+                    className="text-blue-500 underline"
+                  >
+                    Download Patient Consent Form
+                  </a>
+                </div>
               <p className="text-gray-600 mb-4">
                 <strong>Important Notes:</strong>
               </p>
