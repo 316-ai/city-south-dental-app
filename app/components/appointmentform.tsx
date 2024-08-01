@@ -77,7 +77,7 @@ const Appointmentform = () => {
               </ol>
               <div className="mb-4">
                   <a
-                    href="../../public/Medical_Dental History (1).pdf"
+                    href="/Medical_Dental History (1).pdf"
                     download
                     className="text-blue-500 underline"
                   >
@@ -86,7 +86,7 @@ const Appointmentform = () => {
                 </div>
                 <div className="mb-4">
                   <a
-                    href="../../public/Personal Information Consent.pdf.pdf"
+                    href="/Personal Information Consent.pdf"
                     download
                     className="text-blue-500 underline"
                   >
