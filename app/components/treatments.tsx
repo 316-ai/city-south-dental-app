@@ -5,7 +5,7 @@ import { API_URL, IMAGE_URL } from "../../constants";
 import Servicebox from "./servicebox";
 
 const Treatments = () => {
-  const query = "*[_type=='treatments']";
+  const query = "*[_type=='treatments']| order(publishedAt asc)";
 
   const [treatments, setTreatments] = useState([]);
 

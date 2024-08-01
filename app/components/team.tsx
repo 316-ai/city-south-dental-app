@@ -9,7 +9,7 @@ const Team = () => {
           <div className="grid grid-cols-8 gap-6">
             <div className="col-span-8 md:col-span-3">
               <div>
-                <h6 className="text-sm text-sky-600 mb-3">
+                <h6 className="text-md text-sky-600 mb-3">
                   Comprehensive Care
                 </h6>
                 <h2 className="text-2xl text-sky-900 font-semibold mb-4">

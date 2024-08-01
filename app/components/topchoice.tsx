@@ -7,7 +7,7 @@ const Topchoice = () => {
         <div className="lg:container mx-auto">
           <div className="flex justify-between items-end">
             <div>
-              <h6 className="text-sm text-sky-600 mb-3">
+              <h6 className="text-md text-sky-600 mb-3">
                 Excellence in Dental Care
               </h6>
               <h2 className="text-2xl text-sky-900 font-semibold">
@@ -38,9 +38,9 @@ const Topchoice = () => {
                 a commitment to staying at the forefront of dental technology
                 and techniques.
               </h6>
-              <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
+              {/* <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
                 01
-              </h5>
+              </h5> */}
             </div>
             <div className="col-span-1 relative ease-in duration-150 card border border-transparent hover:border-gray-200 rounded-3xl hover:bg-white hover:shadow-md p-3 md:p-5">
               <Image
@@ -55,9 +55,9 @@ const Topchoice = () => {
                 We tailor our dental services to meet the unique needs of each
                 patient, ensuring personalized and effective treatment plans.
               </h6>
-              <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
+              {/* <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
                 02
-              </h5>
+              </h5> */}
             </div>
             <div className="col-span-1 relative ease-in duration-150 card border border-transparent hover:border-gray-200 rounded-3xl hover:bg-white hover:shadow-md p-3 md:p-5">
               <Image
@@ -73,9 +73,9 @@ const Topchoice = () => {
                 full range of services to address all your dental needs in one
                 place.
               </h6>
-              <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
+              {/* <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
                 03
-              </h5>
+              </h5> */}
             </div>
             <div className="col-span-1 relative ease-in duration-150 card border border-transparent hover:border-gray-200 rounded-3xl hover:bg-white hover:shadow-md p-3 md:p-5">
               <Image
@@ -90,9 +90,9 @@ const Topchoice = () => {
                 We place our patients at the center of everything we do,
                 ensuring a comfortable and welcoming environment for all.
               </h6>
-              <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
+              {/* <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
                 04
-              </h5>
+              </h5> */}
             </div>
             <div className="col-span-1 relative ease-in duration-150 card border border-transparent hover:border-gray-200 rounded-3xl hover:bg-white hover:shadow-md p-3 md:p-5">
               <Image
@@ -109,9 +109,9 @@ const Topchoice = () => {
                 Our patients consistently rate us highly for our quality of
                 care, friendly staff, and excellent results.
               </h6>
-              <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
+              {/* <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
                 05
-              </h5>
+              </h5> */}
             </div>
             <div className="col-span-1 relative ease-in duration-150 card border border-transparent hover:border-gray-200 rounded-3xl hover:bg-white hover:shadow-md p-3 md:p-5">
               <Image
@@ -126,9 +126,9 @@ const Topchoice = () => {
                 We use the latest dental technology to provide efficient,
                 effective, and comfortable treatments for our patients.
               </h6>
-              <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
+              {/* <h5 className="text-5xl md:text-7xl font-bold text-gray-200 absolute top-8 right-6">
                 06
-              </h5>
+              </h5> */}
             </div>
           </div>
         </div>

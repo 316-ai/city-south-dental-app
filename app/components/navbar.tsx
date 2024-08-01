@@ -51,11 +51,11 @@ const Navbar = () => {
           <div className="md:flex gap-8">
             <a
               className="flex items-center text-sm"
-              href="https://maps.app.goo.gl/Kmdk9fafCNWfunnC9"
+              href="https://maps.app.goo.gl/i3mL4BvvFXxBKGgF8"
               target="_blank"
             >
               <FeatherIcon icon="map-pin" className="pr-2" />
-              <span>7700 Hurontario St 308, Brampton</span>
+              <span>City South Dental, 7700 Hurontario St #308, Brampton</span>
             </a>
             <a
               className="flex items-center text-sm"
@@ -63,13 +63,13 @@ const Navbar = () => {
               target="_blank"
             >
               <FeatherIcon icon="phone" className="pr-2" />
-              <span>+(905) 459-1742</span>
+              <span>(905) 459-1742</span>
             </a>
           </div>
           <div className="flex justify-between">
             <div className="flex items-center text-sm sm:mr-8">
               <FeatherIcon icon="clock" className="pr-2" />
-              <span>Mon to Sat 09:00 - 21:00</span>
+              <span>Mon to Sat 10:00am - 06:00pm</span>
             </div>
             <div className="flex gap-2">
               <a href="https://www.facebook.com" target="_blank">

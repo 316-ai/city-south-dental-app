@@ -49,8 +49,7 @@ const Banner = () => {
             <div className="px-3 py-2 absolute top-0 bottom-0 w-full h-full flex items-center bg-sky-800 bg-opacity-30">
               <div className="lg:container mx-auto">
                 <h1 className="font-semibold text-3xl lg:text-5xl leading-snug text-white text-shadow w-full text-center mb-8">
-                  Complete Dental Solution
-                </h1>
+                Embark On The Path To A Brighter Smile Today.                </h1>
               </div>
             </div>
             <Image
@@ -82,7 +81,7 @@ const Banner = () => {
         </SwiperSlide>
       </Swiper>
 
-      <div className="doctors absolute bottom-28 left-0 right-0 z-10 select-none pointer-events-none">
+      {/* <div className="doctors absolute bottom-28 left-0 right-0 z-10 select-none pointer-events-none">
         <div className="flex justify-center">
           <Image
             src="/doctor-1.jpeg"
@@ -109,7 +108,7 @@ const Banner = () => {
         <h2 className="text-center text-sm text-white text-shadow mt-2">
           Doctors No.1 Choice
         </h2>
-      </div>
+      </div> */}
     </div>
   );
 };

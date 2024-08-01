@@ -40,16 +40,6 @@ const Search = () => {
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
-              <div>
-                <FeatherIcon
-                  icon="globe"
-                  className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
-                />
-                <h1 className="text-sky-900 pt-1">Have Queries</h1>
-                <h6 className="text-sky-600 text-sm font-light">
-                  7700 Hurontario St 308, Brampton
-                </h6>
-              </div>
               <Link
                 href="https://maps.app.goo.gl/Kmdk9fafCNWfunnC9"
                 target="_blank"
@@ -60,9 +50,20 @@ const Search = () => {
                 />
                 <h1 className="text-sky-900 pt-1">Our Location</h1>
                 <h6 className="text-sky-600 text-sm font-light">
-                  7700 Hurontario St 308, Brampton
-                </h6>
+                Unit #308 7700 Hurontario St , Brampton             </h6>
               </Link>
+              <div>
+                <a href="https://wa.me/14374101742" target="_blank">
+                  <FeatherIcon
+                    icon="message-circle"
+                    className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
+                  />
+                  <h1 className="text-sky-900 pt-1">WhatsApp</h1>
+                  <h6 className="text-sky-600 text-sm font-light">
+                    437 410 1742
+                  </h6>
+                </a>
+              </div>
               <Link href="tel:9054591742" target="_blank">
                 <FeatherIcon
                   icon="phone-call"
@@ -71,14 +72,14 @@ const Search = () => {
                 <h1 className="text-sky-900 pt-1">Call Us</h1>
                 <h6 className="text-sky-600 text-sm font-light">9054591742</h6>
               </Link>
-              <Link href="mailto:dentist@citysouthdental.com" target="_blank">
+              <Link href="mailto:citysouthdental@gmail.com" target="_blank">
                 <FeatherIcon
                   icon="mail"
                   className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
                 />
-                <h1 className="text-sky-900 pt-1">Contact Support</h1>
+                <h1 className="text-sky-900 pt-1">Contact</h1>
                 <h6 className="text-sky-600 text-sm font-light">
-                  dentist@citysouthdental.com
+                citysouthdental@gmail.com
                 </h6>
               </Link>
             </div>

@@ -73,6 +73,39 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex mb-2">
+                <FeatherIcon icon="mail" className="pr-2" />
+                <div>
+                  <h2 className="text-blue-950 uppercase text-sm font-semibold">
+                    Email - Clinic
+                  </h2>
+                  <a
+                    className="text-sm text-gray-600 hover:text-blue-600"
+                    href="mailto:citysouthdental@gmail.com"
+                    target="_blank"
+                  >
+                    <span>citysouthdental@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+              <div className="flex">
+                <FeatherIcon icon="mail" className="pr-2" />
+                <div>
+                  <h2 className="text-blue-950 uppercase text-sm font-semibold">
+                    Email - Management
+                  </h2>
+                  <Link
+                    className="text-sm text-gray-600 hover:text-blue-600"
+                    href="mailto:dentist@citysouthdental.com"
+                    target="_blank"
+                  >
+                    <span>dentist@citysouthdental.com</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-span-8 md:col-span-3 lg:col-span-2 flex flex-col justify-between">
+
+              <div className="flex mb-2">
                 <FeatherIcon icon="phone" className="pr-2" />
                 <div>
                   <h2 className="text-blue-950 uppercase text-sm font-semibold">
@@ -83,27 +116,10 @@ const Footer = () => {
                     href="tel:9054591742"
                     target="_blank"
                   >
-                    <span>+(905) 459-1742</span>
+                    <span>(905) 459-1742</span>
                   </a>
                 </div>
               </div>
-              <div className="flex">
-                <FeatherIcon icon="mail" className="pr-2" />
-                <div>
-                  <h2 className="text-blue-950 uppercase text-sm font-semibold">
-                    Email
-                  </h2>
-                  <a
-                    className="text-sm text-gray-600 hover:text-blue-600"
-                    href="mailto:dentist@citysouthdental.com"
-                    target="_blank"
-                  >
-                    <span>dentist@citysouthdental.com</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-span-8 md:col-span-3 lg:col-span-2 flex flex-col justify-between">
               <div className="flex mb-4">
                 <FeatherIcon icon="clock" className="pr-2" />
                 <div>

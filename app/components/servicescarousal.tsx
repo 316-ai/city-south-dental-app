@@ -31,7 +31,7 @@ const Servicecarousal = () => {
     };
   }, []);
 
-  const query = "*[_type=='treatments']";
+  const query = "*[_type=='treatments']| order(publishedAt asc)";
 
   const [treatments, setTreatments] = useState([]);
 
@@ -69,7 +69,7 @@ const Servicecarousal = () => {
       <div className="px-3 py-7 lg:py-12 bg-white">
         <div className="lg:container mx-auto">
           <div>
-            <h6 className="text-sm text-sky-600 mb-3 text-center">
+            <h6 className="text-medium text-sky-600 mb-3 text-center">
               Comprehensive Care
             </h6>
             <h2 className="text-2xl text-sky-900 font-semibold text-center">
