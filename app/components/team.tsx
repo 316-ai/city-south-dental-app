@@ -31,7 +31,7 @@ const Team = () => {
                       />
                       <h2 className="text-md font-semibold">Call Us</h2>
                       <h5 className="text-sm font-light leading-4">
-                        for immediate assistance
+                        to book appointments
                       </h5>
                     </div>
                   </a>

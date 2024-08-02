@@ -62,10 +62,10 @@ const Appointmentform = () => {
                   print the forms from the link below. Alternatively, email us
                   at{" "}
                   <a
-                    href="mailto:dentist@citysouthdental.com"
+                    href="mailto:citysouthdental@gmail.com"
                     className="text-blue-500"
                   >
-                    dentist@citysouthdental.com
+                    citysouthdental@gmail.com
                   </a>
                   , and we will promptly send you the forms.
                 </li>

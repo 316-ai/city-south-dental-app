@@ -42,11 +42,11 @@ const Contactform = () => {
                 <h2 className="text-2xl text-sky-900 font-semibold mb-3">
                   Effortless Booking With Us
                 </h2>
-                <h6 className="text-sm text-gray-400 font-light">
+                {/* <h6 className="text-sm text-gray-400 font-light">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit minima ipsum ratione ipsum dolor sit amet consectetur
                   adipisicing
-                </h6>
+                </h6> */}
               </div>
 
               <div className="grid grid-cols-6 gap-4 mt-6">
@@ -73,8 +73,8 @@ const Contactform = () => {
                       <SelectValue placeholder="Patient Status" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="Toronto">I am a new patient</SelectItem>
-                      <SelectItem value="Downtown">I am an existing patient</SelectItem>
+                      <SelectItem value="I am a new patient">I am a new patient</SelectItem>
+                      <SelectItem value="I am an existing patient">I am an existing patient</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -117,25 +117,14 @@ const Contactform = () => {
           </div>
 
           <div className="mt-12">
-            <h6 className="text-sm text-sky-600 mb-3">Connect to Us</h6>
             <h2 className="text-2xl text-sky-900 font-semibold mb-3">
               Get in Touch
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
-              <div>
-                <FeatherIcon
-                  icon="globe"
-                  className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
-                />
-                <h1 className="text-sky-900 pt-1">Have Queries</h1>
-                <h6 className="text-sky-600 text-sm font-light">
-                  7700 Hurontario St 308, Brampton
-                </h6>
-              </div>
               <Link
-                href="https://maps.app.goo.gl/Kmdk9fafCNWfunnC9"
-                target="_blank"
+              href="https://maps.app.goo.gl/i3mL4BvvFXxBKGgF8"
+              target="_blank"
               >
                 <FeatherIcon
                   icon="map-pin"
@@ -143,9 +132,20 @@ const Contactform = () => {
                 />
                 <h1 className="text-sky-900 pt-1">Our Location</h1>
                 <h6 className="text-sky-600 text-sm font-light">
-                  7700 Hurontario St 308, Brampton
-                </h6>
+                Unit #308 7700 Hurontario St , Brampton             </h6>
               </Link>
+              <div>
+                <a href="https://wa.me/14374101742" target="_blank">
+                  <FeatherIcon
+                    icon="message-circle"
+                    className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
+                  />
+                  <h1 className="text-sky-900 pt-1">WhatsApp</h1>
+                  <h6 className="text-sky-600 text-sm font-light">
+                    437 410 1742
+                  </h6>
+                </a>
+              </div>
               <Link href="tel:9054591742" target="_blank">
                 <FeatherIcon
                   icon="phone-call"
@@ -154,14 +154,14 @@ const Contactform = () => {
                 <h1 className="text-sky-900 pt-1">Call Us</h1>
                 <h6 className="text-sky-600 text-sm font-light">9054591742</h6>
               </Link>
-              <Link href="mailto:dentist@citysouthdental.com" target="_blank">
+              <Link href="mailto:citysouthdental@gmail.com" target="_blank">
                 <FeatherIcon
                   icon="mail"
                   className="float-left size-14 rounded p-3 border mr-3 text-sky-600"
                 />
-                <h1 className="text-sky-900 pt-1">Contact Support</h1>
+                <h1 className="text-sky-900 pt-1">Contact</h1>
                 <h6 className="text-sky-600 text-sm font-light">
-                  dentist@citysouthdental.com
+                citysouthdental@gmail.com
                 </h6>
               </Link>
             </div>

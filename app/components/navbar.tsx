@@ -55,7 +55,7 @@ const Navbar = () => {
               target="_blank"
             >
               <FeatherIcon icon="map-pin" className="pr-2" />
-              <span>City South Dental, 7700 Hurontario St #308, Brampton</span>
+              <span>Unit #308,7700 Hurontario St , Brampton</span>
             </a>
             <a
               className="flex items-center text-sm"
@@ -72,13 +72,14 @@ const Navbar = () => {
               <span>Mon to Sat 10:00am - 06:00pm</span>
             </div>
             <div className="flex gap-2">
-              <a href="https://www.facebook.com" target="_blank">
+              <a href="https://www.facebook.com/CitySouthDental" target="_blank">
                 <FeatherIcon icon="facebook" className="pl-2" />
               </a>
-              <a href="https://www.linkedin.com" target="_blank">
+              <a href="https://www.linkedin.com/company/city-south-dental/about/" target="_blank">
                 <FeatherIcon icon="linkedin" className="pl-2" />
               </a>
-              <a href="https://www.instagram.com" target="_blank">
+              <a href="https://www.instagram.com/Citysouth_dental
+" target="_blank">
                 <FeatherIcon icon="instagram" className="pl-2" />
               </a>
             </div>
