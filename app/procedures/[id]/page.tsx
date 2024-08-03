@@ -10,7 +10,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import FeatherIcon from "feather-icons-react";
 
-interface Treatment {
+interface ProcedureModel {
   id: string;
   body: string[];
   title: string;
@@ -18,9 +18,9 @@ interface Treatment {
   icon:any;
 }
 
-export default function Treatments() {
+export default function ProcedureCard() {
   const { id } = useParams();
-  const [treatment, setTreatment] = useState<Treatment>();
+  const [procedure, setProcedure] = useState<ProcedureModel>();
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -29,13 +29,13 @@ export default function Treatments() {
     if (id) { // Null check for id
       const fetchData = async () => {
         try {
-          const query = `*[_type=='treatments'][slug.current == '${id}']`;
+          const query = `*[_type=='procedures'][slug.current == '${id}']`;
           const encodedQuery = encodeURIComponent(query);
           const fullUrl = `${API_URL}?query=${encodedQuery}`;
 
           const response = await fetch(fullUrl);
           const data = await response.json();
-          setTreatment({
+          setProcedure({
             id: data.result[0]._id,
             body: getDescriptionText(data.result[0].body),
             title: data.result[0].title,
@@ -65,22 +65,23 @@ export default function Treatments() {
     return `${IMAGE_URL}${ref.replace("image-", "").replace(/-(\w+)$/, ".$1")}`;
   };
 
+ 
   return (
     <>
       <Navbar />
       <section className="content">
-        <Pagebanner name={treatment?.title || "Service Name"} />
+        <Pagebanner name={procedure?.title || "Service Name"} />
 
         <section className="blogs px-3 py-7 lg:py-12 bg-white">
           <div className="lg:container mx-auto">
             <div>
               <h6 className="text-sm text-sky-600"></h6>
               <h1 className="text-2xl text-sky-900 font-semibold mt-2 mb-4">
-                {treatment?.title}
+                {procedure?.title}
               </h1>
               <div className="grid grid-cols-8 gap-12 md:gap-8 my-6">
                 <div className="col-span-8 md:col-span-5 flex flex-col">
-                  {treatment?.body.map((paragraph, index) => (
+                  {procedure?.body.map((paragraph, index) => (
                     <p
                       key={index}
                       className={`text-sm mb-5 ${
@@ -93,15 +94,15 @@ export default function Treatments() {
                 </div>
 
                 <div className="col-span-4 md:col-span-3">
-                 {treatment && <Image
-                    src={treatment?.image}
+                 {procedure && <Image
+                    src={procedure?.image}
                     alt="healthy smile"
                     className="h-full object-cover shadow rounded-3xl"
                     width={1500}
                     height={1000}
-                  />}       
-            </div>
-          </div>
+                  />}
+                </div>
+              </div>
             </div>
             <div>
             <h2 className="text-2xl text-sky-900 font-semibold mb-3">
@@ -154,7 +155,6 @@ export default function Treatments() {
             </div>
           </div>
           </div>
-
         </section>
       </section>
       <Footer />

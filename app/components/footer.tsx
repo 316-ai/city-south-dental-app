@@ -65,13 +65,46 @@ const Footer = () => {
                   </h2>
                   <a
                     className="text-sm text-gray-600 hover:text-blue-600"
-                    href="https://maps.app.goo.gl/Kmdk9fafCNWfunnC9"
+                    href="https://maps.app.goo.gl/i3mL4BvvFXxBKGgF8"
                     target="_blank"
                   >
-                    <span>7700 Hurontario St 308, Brampton</span>
+                    <span>Unit #308,7700 Hurontario St, Brampton</span>
                   </a>
                 </div>
               </div>
+              <div className="flex mb-2">
+                <FeatherIcon icon="mail" className="pr-2" />
+                <div>
+                  <h2 className="text-blue-950 uppercase text-sm font-semibold">
+                    Email - Clinic
+                  </h2>
+                  <a
+                    className="text-sm text-gray-600 hover:text-blue-600"
+                    href="mailto:citysouthdental@gmail.com"
+                    target="_blank"
+                  >
+                    <span>citysouthdental@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+              <div className="flex">
+                <FeatherIcon icon="mail" className="pr-2" />
+                <div>
+                  <h2 className="text-blue-950 uppercase text-sm font-semibold">
+                    Email - Management
+                  </h2>
+                  <Link
+                    className="text-sm text-gray-600 hover:text-blue-600"
+                    href="mailto:dentist@citysouthdental.com"
+                    target="_blank"
+                  >
+                    <span>dentist@citysouthdental.com</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-span-8 md:col-span-3 lg:col-span-2 flex flex-col justify-between">
+
               <div className="flex mb-2">
                 <FeatherIcon icon="phone" className="pr-2" />
                 <div>
@@ -83,27 +116,10 @@ const Footer = () => {
                     href="tel:9054591742"
                     target="_blank"
                   >
-                    <span>+(905) 459-1742</span>
+                    <span>(905) 459-1742</span>
                   </a>
                 </div>
               </div>
-              <div className="flex">
-                <FeatherIcon icon="mail" className="pr-2" />
-                <div>
-                  <h2 className="text-blue-950 uppercase text-sm font-semibold">
-                    Email
-                  </h2>
-                  <a
-                    className="text-sm text-gray-600 hover:text-blue-600"
-                    href="mailto:dentist@citysouthdental.com"
-                    target="_blank"
-                  >
-                    <span>dentist@citysouthdental.com</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-span-8 md:col-span-3 lg:col-span-2 flex flex-col justify-between">
               <div className="flex mb-4">
                 <FeatherIcon icon="clock" className="pr-2" />
                 <div>
@@ -111,13 +127,16 @@ const Footer = () => {
                     Working Hours
                   </h2>
                   <p className="text-sm text-gray-600">
-                    Mon to Sat 09:00 - 21:00
+                    Mon to Sat 10:00 am - 06:00 pm
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Sundays - By Appointment Only
                   </p>
                 </div>
               </div>
               <div className="flex gap-2">
                 <a
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/CitySouthDental"
                   target="_blank"
                   className="rounded-2xl shadow text-gray-500 hover:text-sky-800 bg-white hover:bg-sky-100 ease-in duration-150 p-2"
                 >
@@ -125,14 +144,14 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/company/city-south-dental/about/"
                   target="_blank"
                   className="rounded-2xl shadow text-gray-500 hover:text-sky-800 bg-white hover:bg-sky-100 ease-in duration-150 p-2"
                 >
                   <FeatherIcon icon="linkedin" className="p-1" />
                 </a>
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/Citysouth_dental"
                   target="_blank"
                   className="rounded-2xl shadow text-gray-500 hover:text-sky-800 bg-white hover:bg-sky-100 ease-in duration-150 p-2"
                 >

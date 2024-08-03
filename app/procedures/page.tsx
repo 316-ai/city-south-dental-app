@@ -1,16 +1,16 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Pagebanner from "../components/pagebanner";
-import Treatments from "../components/treatments";
 import Witness from "../components/witness";
+import ProcedureComponent from "../components/proceduresComponent";
 
-export default function Treatment() {
+export default function Procedures() {
   return (
     <>
       <Navbar />
       <section className="content">
-        <Pagebanner name="Dental Services" />
-        <Treatments />
+        <Pagebanner name="Treatments and Procedures" />
+        <ProcedureComponent />
         <Witness />
       </section>
       <Footer />

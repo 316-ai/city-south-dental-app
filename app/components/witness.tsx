@@ -47,7 +47,7 @@ const Witness = () => {
       <div className="px-3 py-7 lg:py-12">
         <div className="lg:container mx-auto">
           <div className="mb-5 text-center">
-            <h6 className="text-sm text-sky-600 mb-3">
+            <h6 className="text-md text-sky-600 mb-3">
               Transforming Smiles at City South Dental
             </h6>
             <h2 className="text-2xl text-sky-900 font-semibold">

@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import { API_URL, IMAGE_URL } from "../../constants";
 import Servicebox from "./servicebox";
 
-const Treatments = () => {
-  const query = "*[_type=='treatments']| order(publishedAt asc)";
+const ProcedureComponent = () => {
+  const query = "*[_type=='procedures']";
 
-  const [treatments, setTreatments] = useState([]);
+  const [procedures, setProcedures] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,7 +17,7 @@ const Treatments = () => {
 
         const response = await fetch(fullUrl);
         const data = await response.json();
-        setTreatments(data.result); 
+        setProcedures(data.result); 
       } catch (error) {
         console.error(error);
       }
@@ -44,20 +44,20 @@ const Treatments = () => {
         <div>
           <h6 className="text-sm text-sky-600 mb-3">Sub Header</h6>
           <h2 className="text-2xl text-sky-900 font-semibold">
-            Our Specialized Treatments
+            Our Specialized Treatments and Procedures
           </h2>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mt-7">
-          {treatments.length > 0 ? (
-            treatments.map((treatment: any) => (
+          {procedures.length > 0 ? (
+            procedures.map((procedure: any) => (
               <Servicebox
-                key={treatment._id}
-                image={getImageUrl(treatment.icon.asset._ref)}
-                caption={treatment.title}
-                description={getDescriptionText(treatment.body)}
-                slug={treatment.slug.current}
-                basePath="treatment"
+                key={procedure._id}
+                image={getImageUrl(procedure.icon.asset._ref)}
+                caption={procedure.title}
+                description={getDescriptionText(procedure.body)}
+                slug={procedure.slug.current}
+                basePath="procedures"
               />
             ))
           ) : (
@@ -69,4 +69,4 @@ const Treatments = () => {
   );
 };
 
-export default Treatments;
+export default ProcedureComponent;

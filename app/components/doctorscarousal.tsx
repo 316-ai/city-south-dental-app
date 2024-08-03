@@ -7,8 +7,21 @@ import { Navigation, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/bundle";
 import Doctorsbox from "./doctorsbox";
+import { API_URL, IMAGE_URL } from "@/constants";
+
+interface Doctors {
+  id: string;
+  name: string;
+  description: string;
+  image:any;
+}
+
 
 const Doctorscarousal = () => {
+
+  const query = "*[_type=='doctors']";
+  const [doctors, setDoctors] = useState<Doctors[]>([]);
+
   const [slidesPerView, setSlidesPerView] = useState(1);
   useEffect(() => {
     const handleResize = () => {
@@ -32,54 +45,59 @@ const Doctorscarousal = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const encodedQuery = encodeURIComponent(query);
+        const fullUrl = `${API_URL}?query=${encodedQuery}`;
+
+        const response = await fetch(fullUrl);
+        const data = await response.json();
+        const result: Doctors[] = mapApiResultToDoctors(data); 
+        setDoctors(result);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const getImageUrl = (ref: string) => {
+    return `${IMAGE_URL}${ref.replace("image-", "").replace(/-(\w+)$/, ".$1")}`;
+  };
+  
+  const mapApiResultToDoctors = (apiResult: any): Doctors[] => {
+    return apiResult.result.map((doctor: any) => ({
+      id: doctor._id,
+      name: doctor.name,
+      description: doctor.description,
+      image: getImageUrl(doctor.photo.asset._ref),
+    }));
+  };
+
   return (
     <>
-      <Swiper
-        modules={[Navigation, Autoplay, A11y]}
-        // navigation
-        slidesPerView={slidesPerView}
-        spaceBetween={12}
-        autoplay={true}
-        loop={true}
-        className="w-full"
-      >
-        <SwiperSlide>
-          <div className="py-4">
-            <Doctorsbox
-              photo="/doctor-1.jpeg"
-              name="John T Sebastian"
-              brief="Enhance your smile with our cosmetic dentistry services, including teeth whitening, veneers, and more. Achieve the smile you've always wanted."
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="py-4">
-            <Doctorsbox
-              photo="/doctor-1.jpeg"
-              name="Simon N V"
-              brief="Our pediatric dentistry services ensure that your child's dental health is in good hands. We provide gentle and comprehensive care for young smiles."
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="py-4">
-            <Doctorsbox
-              photo="/doctor-1.jpeg"
-              name="Jithin 316"
-              brief="Our oral surgery services cover a range of procedures, from extractions to corrective jaw surgery. Trust our skilled surgeons for safe and effective treatment."
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="py-4">
-            <Doctorsbox
-              photo="/doctor-1.jpeg"
-              name="Simon N V"
-              brief="Our pediatric dentistry services ensure that your child's dental health is in good hands. We provide gentle and comprehensive care for young smiles."
-            />
-          </div>
-        </SwiperSlide>
-      </Swiper>
+<Swiper
+  modules={[Navigation, Autoplay, A11y]}
+  slidesPerView={slidesPerView}
+  spaceBetween={12}
+  autoplay={true}
+  loop={true}
+  className="w-full"
+>
+  {doctors.map((doctor) => (
+    <SwiperSlide key={doctor.id}>
+      <div className="py-4">
+        <Doctorsbox
+          photo={doctor.image}
+          name={doctor.name}
+          brief={doctor.description}
+        />
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
     </>
   );
 };
