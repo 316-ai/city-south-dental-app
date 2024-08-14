@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Link from "next/link";
 import FeatherIcon from "feather-icons-react";
 import Image from "next/image";
@@ -38,7 +38,6 @@ const Blogcard = () => {
     fetchData();
   }, []);
 
-
   if (loading) {
     return <p>Loading...</p>;
   }
@@ -51,10 +50,10 @@ const Blogcard = () => {
             key={blog._id}
             className="transition-all rounded-3xl overflow-hidden border shadow hover:shadow-lg mb-4"
           >
-            {blogs.length}
+            {/* {blogs.length} */}
             <Image
-          src="/emergency-dental-care.jpeg"
-          alt="emergency-dental-care"
+              src="/emergency-dental-care.jpeg"
+              alt="emergency-dental-care"
               width={600}
               height={0}
               className="w-full h-60 object-cover"
